@@ -7,7 +7,7 @@
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
     var meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute('content', dark ? '#221819' : '#FFFBF9');
-  } catch (e) {
+  } catch {
     /* storage unavailable: keep the default light theme */
   }
 })();

@@ -50,6 +50,7 @@ for (const theme of ['light', 'dark'] as const) {
 test('keyboard: the skip link is the first tab stop and jumps to the content', async ({ page }) => {
   await installFakeBackend(page, { signedIn: true });
   await page.goto('/m/dashboard');
+  await expect(page.locator('main#main')).toBeVisible();
   await page.keyboard.press('Tab');
   const skip = page.getByRole('link', { name: 'Перейти до вмісту' });
   await expect(skip).toBeFocused();

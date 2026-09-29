@@ -38,7 +38,7 @@ export default function ProfilePage() {
   return (
     <div className="mx-auto grid max-w-xl gap-6">
       <Card>
-        <h2 className="mb-4 text-xl font-bold">{t('heading')}</h2>
+        <h1 className="mb-4 text-xl font-bold">{t('heading')}</h1>
         <form
           onSubmit={(e) => void handleSubmit((v) => update.mutateAsync(v))(e)}
           className="grid gap-4"
