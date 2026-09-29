@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import { AnimatePresence, motion } from 'motion/react';
@@ -10,24 +10,25 @@ import { useReportProgress, type DailyPlan, type DailyTask } from '../queries';
 /** Round check: pops with a heart-ish spring when a task becomes done, floating "+XP" above it. */
 function TaskCheck({ done, emoji, xp }: { done: boolean; emoji: string; xp: number }) {
   const { t } = useTranslation();
-  const wasDone = useRef(done);
-  const [showXp, setShowXp] = useState(false);
+  const [prevDone, setPrevDone] = useState(done);
+  const [changed, setChanged] = useState(false);
+  if (done !== prevDone) {
+    setPrevDone(done);
+    setChanged(true);
+  }
+  const showXp = changed && done;
 
   useEffect(() => {
-    if (done && !wasDone.current) {
-      setShowXp(true);
-      const id = setTimeout(() => setShowXp(false), 1400);
-      wasDone.current = true;
-      return () => clearTimeout(id);
-    }
-    wasDone.current = done;
-  }, [done]);
+    if (!changed) return;
+    const id = setTimeout(() => setChanged(false), 1400);
+    return () => clearTimeout(id);
+  }, [changed, done]);
 
   return (
     <span className="relative">
       <motion.span
         key={done ? 'done' : 'todo'}
-        initial={wasDone.current === done && !showXp ? false : { scale: 0.4 }}
+        initial={changed ? { scale: 0.4 } : false}
         animate={{ scale: 1 }}
         transition={{ type: 'spring', stiffness: 420, damping: 14 }}
         className={`flex size-8 shrink-0 items-center justify-center rounded-full ${

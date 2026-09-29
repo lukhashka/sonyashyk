@@ -28,7 +28,7 @@ function TodayCard() {
         </span>
       </Ring>
       <div className="flex flex-1 flex-col gap-2 text-center sm:text-left">
-        <h2 className="text-xl font-bold">{t('today.title')}</h2>
+        <h1 className="text-xl font-bold">{t('today.title')}</h1>
         <p className="text-text-muted">
           {total === 0
             ? t('today.none')

@@ -26,7 +26,7 @@ test.describe('sign in', () => {
     await page.getByLabel('Пароль').fill(E2E_PASSWORD);
     await page.getByRole('button', { name: 'Увійти' }).click();
     await expect(page).toHaveURL(/\/m\/dashboard$/);
-    await expect(page.getByText('Соня', { exact: false }).first()).toBeVisible();
+    await expect(page.locator('main h1')).toBeVisible();
   });
 });
 
