@@ -36,9 +36,15 @@ begin
   end;
 
   -- A cannot delete B's file.
-  delete from storage.objects where name = '00000000-0000-0000-0000-00000000000b/avatar.png';
-  get diagnostics n = row_count;
-  if n <> 0 then raise exception 'FAIL: user A deleted user B file'; end if;
+  -- Supabase's storage.protect_delete trigger rejects direct deletes outright, so either
+  -- outcome (0 rows via RLS, or the trigger error) means the file was not deleted.
+  begin
+    delete from storage.objects where name = '00000000-0000-0000-0000-00000000000b/avatar.png';
+    get diagnostics n = row_count;
+    if n <> 0 then raise exception 'FAIL: user A deleted user B file'; end if;
+  exception when others then
+    if sqlerrm not like 'Direct deletion from storage tables%' then raise; end if;
+  end;
 
   -- avatar_url must point into the caller's own folder.
   update public.profiles set avatar_url = '00000000-0000-0000-0000-00000000000a/avatar.png' where id = auth.uid();
