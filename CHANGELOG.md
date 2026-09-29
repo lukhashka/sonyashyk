@@ -1,5 +1,13 @@
 # Changelog
 
+## Phase 3 — Daily engine & gamification core (2026-09-29)
+
+- Migration `daily_engine`: `daily_plans`, `daily_tasks`, `xp_events` (append-only ledger), `streaks` — RLS read-own only, no client writes.
+- Server-side RPCs (`security definer`): `ensure_daily_plan` (idempotent), `report_task_progress` (validates, awards XP once, closes the day, +10 bonus XP), streak bookkeeping with freezes (1 per 7-day streak, max 2, auto-used), `study_day`, `get_xp_summary`. SQL test `rls_daily.sql` (idempotency, no double XP, direct writes denied, user isolation).
+- `core/daily` (plan from module `dailyTaskProvider`s, progress/XP/streak/week queries), `core/events` typed bus, `core/gamification` (level curve, law-themed titles, effective streak), timezone-aware `getStudyDay`.
+- New `today` module (grouped task list, day-complete state); dashboard: Today ring + continue, streak with weekly calendar, level bar, daily quote, module widgets; real streak in the top bar; dashboard contributes a "say hi" check-in task.
+- "Export my data" now includes plans, tasks, XP events and streaks.
+
 ## Phase 2 — Auth, cabinet & deploy setup (2026-09-29)
 
 - Supabase client (PKCE, anon key only), `AuthProvider`, `RequireAuth` guard, login page (generic error messages).

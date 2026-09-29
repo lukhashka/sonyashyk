@@ -34,6 +34,16 @@ export const en: typeof uk = {
       mfaSubmit: 'Verify',
       mfaCancel: 'Sign out',
     },
+    daily: {
+      xp: '{{count}} XP',
+      minutes: '{{count}} min',
+      go: 'Start',
+      markDone: 'Done',
+      done: 'Done',
+      error: 'Could not update the task. Please try again.',
+      dayComplete: 'Day complete!',
+      dayCompleteHint: 'You did great. Bonus XP added and your streak is updated 🔥',
+    },
     empty: { title: 'Nothing here yet' },
   },
 };

@@ -76,11 +76,13 @@ export function buildExport(
   user: { id: string; email?: string; created_at?: string },
   profile: unknown,
   now = new Date(),
+  extra: Record<string, unknown> = {},
 ) {
   return {
     exported_at: now.toISOString(),
     account: { id: user.id, email: user.email ?? null, created_at: user.created_at ?? null },
     profile,
+    ...extra,
   };
 }
 
@@ -89,7 +91,15 @@ export async function exportMyData(): Promise<void> {
   if (userError || !userData.user) throw userError ?? new Error('Not signed in');
   const { data: profile, error } = await supabase.from('profiles').select('*').single();
   if (error) throw error;
-  const payload = buildExport(userData.user, profile);
+  // Rows are limited to the caller's own by RLS.
+  const tables = ['daily_plans', 'daily_tasks', 'xp_events', 'streaks'] as const;
+  const extra: Record<string, unknown> = {};
+  for (const table of tables) {
+    const { data, error: tableError } = await supabase.from(table).select('*');
+    if (tableError) throw tableError;
+    extra[table] = data;
+  }
+  const payload = buildExport(userData.user, profile, new Date(), extra);
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');

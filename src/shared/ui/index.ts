@@ -3,6 +3,7 @@ export { Card } from './Card';
 export { Badge } from './Badge';
 export { Emoji } from './Emoji';
 export { Progress } from './Progress';
+export { Ring } from './Ring';
 export { EmptyState } from './EmptyState';
 export { Skeleton } from './Skeleton';
 export { cn } from './cn';

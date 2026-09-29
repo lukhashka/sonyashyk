@@ -32,6 +32,16 @@ export const uk = {
       mfaSubmit: 'Підтвердити',
       mfaCancel: 'Вийти',
     },
+    daily: {
+      xp: '{{count}} XP',
+      minutes: '{{count}} хв',
+      go: 'Почати',
+      markDone: 'Готово',
+      done: 'Зроблено',
+      error: 'Не вдалося оновити завдання. Спробуй ще раз.',
+      dayComplete: 'День завершено!',
+      dayCompleteHint: 'Ти чудово впоралась. Додано бонус XP та оновлено серію 🔥',
+    },
     empty: { title: 'Тут поки порожньо' },
   },
 };
