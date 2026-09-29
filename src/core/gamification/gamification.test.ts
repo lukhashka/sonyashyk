@@ -15,8 +15,10 @@ describe('levels', () => {
     expect(getLevel(80)).toEqual({ level: 2, into: 30, needed: 100 });
   });
   it('maps levels to titles in buckets of three', () => {
-    expect(getLevelTitleKey(1)).toBe('freshman');
-    expect(getLevelTitleKey(4)).toBe('paralegal');
+    expect(getLevelTitleKey(1)).toBe('miniCat');
+    expect(getLevelTitleKey(3)).toBe('seniorCat');
+    expect(getLevelTitleKey(5)).toBe('yum');
+    expect(getLevelTitleKey(6)).toBe('paralegal');
     expect(getLevelTitleKey(99)).toBe('judge');
   });
 });

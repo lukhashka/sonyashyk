@@ -19,10 +19,24 @@ export function getLevel(totalXp: number): LevelInfo {
   return { level, into: xp - xpForLevel(level), needed: xpForLevel(level + 1) - xpForLevel(level) };
 }
 
-/** Law-themed titles; index = min(level, last) - 1 buckets of 3 levels each. */
-export const LEVEL_TITLE_KEYS = ['freshman', 'paralegal', 'lawyer', 'advocate', 'judge'] as const;
+/** Titles with the first level of each tier; the last tier lasts forever. */
+const LEVEL_TIERS = [
+  { key: 'miniCat', from: 1 },
+  { key: 'seniorCat', from: 2 },
+  { key: 'yum', from: 4 },
+  { key: 'paralegal', from: 6 },
+  { key: 'lawyer', from: 9 },
+  { key: 'advocate', from: 12 },
+  { key: 'judge', from: 15 },
+] as const;
 
-export function getLevelTitleKey(level: number): (typeof LEVEL_TITLE_KEYS)[number] {
-  const idx = Math.min(LEVEL_TITLE_KEYS.length - 1, Math.floor((Math.max(1, level) - 1) / 3));
-  return LEVEL_TITLE_KEYS[idx] ?? 'freshman';
+export type LevelTitleKey = (typeof LEVEL_TIERS)[number]['key'];
+
+export const LEVEL_TITLE_KEYS: readonly LevelTitleKey[] = LEVEL_TIERS.map((t) => t.key);
+
+export function getLevelTitleKey(level: number): LevelTitleKey {
+  const l = Math.max(1, Math.floor(level));
+  let key: LevelTitleKey = LEVEL_TIERS[0].key;
+  for (const tier of LEVEL_TIERS) if (l >= tier.from) key = tier.key;
+  return key;
 }

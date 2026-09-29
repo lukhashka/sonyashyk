@@ -52,7 +52,9 @@ export const dashboardModule: AppModule = {
         toNext: 'До наступного: {{xp}} XP',
       },
       titles: {
-        freshman: 'Першокурсниця 📚',
+        miniCat: 'Міні котусик 🐱',
+        seniorCat: 'Старший котусик 😺',
+        yum: 'Амнямнямня 😋',
         paralegal: 'Помічниця юриста',
         lawyer: 'Юристка ⚖️',
         advocate: 'Адвокатка',
@@ -93,7 +95,9 @@ export const dashboardModule: AppModule = {
         toNext: '{{xp}} XP to next level',
       },
       titles: {
-        freshman: 'Freshman 📚',
+        miniCat: 'Mini Kitty 🐱',
+        seniorCat: 'Senior Kitty 😺',
+        yum: 'Nom nom nom 😋',
         paralegal: 'Paralegal',
         lawyer: 'Lawyer ⚖️',
         advocate: 'Advocate',
