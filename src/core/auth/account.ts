@@ -97,6 +97,7 @@ export async function exportMyData(): Promise<void> {
     'daily_tasks',
     'xp_events',
     'streaks',
+    'achievements_unlocked',
     'ew_user_words',
     'ew_reviews',
     'ew_settings',

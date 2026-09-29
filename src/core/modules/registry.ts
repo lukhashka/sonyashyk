@@ -2,6 +2,7 @@ import type { AppModule } from './types';
 import { dashboardModule } from '@/modules/dashboard';
 import { profileModule } from '@/modules/profile';
 import { englishWordsModule } from '@/modules/english-words';
+import { statsModule } from '@/modules/stats';
 import { todayModule } from '@/modules/today';
 
 /** The ONLY place where modules are enabled. */
@@ -9,6 +10,7 @@ export const registry: AppModule[] = [
   dashboardModule,
   todayModule,
   englishWordsModule,
+  statsModule,
   profileModule,
 ];
 

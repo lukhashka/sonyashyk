@@ -1,5 +1,13 @@
 # Changelog
 
+## Phase 5 — Stats & achievements (2026-09-29)
+
+- Migrations `stats_achievements` + `ew_stats`: `achievements_unlocked` (RLS read-own, no client writes), RPCs `get_stats_summary`, `get_daily_stats`, `ew_get_stats`, and the server-side achievements engine (`check_core_achievements`, `ew_check_achievements`, internal `grant_achievement`). SQL test `rls_stats.sql` (numbers, idempotent unlocking, no client grants, user isolation).
+- New `stats` module: week / month / all-time range, summary cards (XP & level, streak, days studied, study time + module cards from `statsProvider`), GitHub-style pink heatmap (26 weeks of XP), XP-per-day bars (weekly buckets for long ranges), module widgets (`english-words`: words practised, accuracy trend, topic breakdown), achievements gallery (locked ones greyed with a hint).
+- 25 achievements (16 core, 9 English words) with cosy copy; a global `AchievementWatcher` re-checks after `task.completed` / `day.completed` / `words.learned` and shows a toast for newly unlocked ones. Modules declare achievements + `checkAchievementsRpc` in their manifest.
+- Charts via Recharts (themed with the design tokens, lazy-loaded with the stats page). English words moved to the "More" menu on mobile so the tab bar is Home / Today / Stats / Profile.
+- "Export my data" now includes unlocked achievements.
+
 ## Phase 4 — English words module (2026-09-29)
 
 - Migrations `english_words` + `ew_seed`: `ew_words` (shared dictionary + private custom words), `ew_user_words` (SRS state), `ew_reviews` (append-only answer log), `ew_settings` — RLS on all, custom-word cap, SQL isolation test `rls_ew.sql` (shared dictionary is read-only for clients, user B sees nothing of A).

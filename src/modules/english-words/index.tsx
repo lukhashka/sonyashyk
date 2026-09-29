@@ -1,13 +1,22 @@
 import { lazy } from 'react';
 import { Languages } from 'lucide-react';
-import type { AppModule } from '@/core/modules/types';
+import type { AchievementDefinition, AppModule } from '@/core/modules/types';
+import { percent } from '@/core/stats/series';
 import { i18n } from './i18n';
-import { fetchDailyCounts, fetchWordsPerDay } from './lib/fetchers';
+import { fetchDailyCounts, fetchEwStats, fetchWordsPerDay } from './lib/fetchers';
 import { MAX_REVIEW_BATCH } from './lib/selection';
 
 const HubPage = lazy(() => import('./pages/HubPage'));
 const SessionPage = lazy(() => import('./pages/SessionPage'));
 const DictionaryPage = lazy(() => import('./pages/DictionaryPage'));
+const WordsCharts = lazy(() => import('./widgets/WordsCharts'));
+
+const ach = (id: string, emoji: string): AchievementDefinition => ({
+  id: `ew-${id}`,
+  emoji,
+  title: `english-words:ach.ew-${id}.title`,
+  description: `english-words:ach.ew-${id}.hint`,
+});
 
 export const englishWordsModule: AppModule = {
   id: 'english-words',
@@ -16,7 +25,7 @@ export const englishWordsModule: AppModule = {
   icon: Languages,
   emoji: '🇬🇧',
   enabledByDefault: true,
-  nav: { order: 2, placement: 'main' },
+  nav: { order: 2, placement: 'more' },
   routes: [
     { index: true, element: <HubPage /> },
     { path: 'session', element: <SessionPage /> },
@@ -54,5 +63,40 @@ export const englishWordsModule: AppModule = {
       return tasks;
     },
   },
+  statsProvider: {
+    async getSummary(range) {
+      const s = await fetchEwStats(range);
+      const acc = percent(s.rangeCorrect, s.rangeAnswers);
+      return [
+        { key: 'known', label: 'english-words:stats.known', value: s.known, emoji: '⭐' },
+        {
+          key: 'practiced',
+          label: 'english-words:stats.practiced',
+          value: s.rangeWords,
+          emoji: '📖',
+        },
+        {
+          key: 'accuracy',
+          label: 'english-words:stats.accuracy',
+          value: acc === null ? '—' : `${acc}%`,
+          emoji: '🎯',
+        },
+        { key: 'due', label: 'english-words:stats.due', value: s.due, emoji: '🔁' },
+      ];
+    },
+    Widgets: [WordsCharts],
+  },
+  checkAchievementsRpc: 'ew_check_achievements',
+  achievements: [
+    ach('words-10', '📖'),
+    ach('words-50', '🔤'),
+    ach('words-100', '😋'),
+    ach('words-300', '🍽️'),
+    ach('known-25', '⭐'),
+    ach('known-100', '🎓'),
+    ach('reviews-100', '🔁'),
+    ach('perfect-day', '💯'),
+    ach('custom-word', '✍️'),
+  ],
   i18n,
 };

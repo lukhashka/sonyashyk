@@ -55,6 +55,7 @@ export interface DashboardWidget {
 export interface AchievementDefinition {
   id: string;
   title: I18nKey;
+  /** Shown as the hint while the achievement is still locked. */
   description: I18nKey;
   emoji: string;
 }
@@ -76,6 +77,8 @@ export interface AppModule {
   dashboardWidgets?: DashboardWidget[];
   settings?: { schema: ZodType; defaults: unknown; Component: ComponentType };
   achievements?: AchievementDefinition[];
+  /** Name of the Postgres RPC that evaluates this module's achievements and returns new ids. */
+  checkAchievementsRpc?: string;
 
   /** Translations for this module's own i18n namespace (namespace = module id). */
   i18n?: Record<Locale, Record<string, unknown>>;

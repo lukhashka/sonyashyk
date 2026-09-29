@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router';
+import { AchievementWatcher } from '@/core/gamification/AchievementWatcher';
 import { Skeleton } from '@/shared/ui';
 import { BottomNav } from './BottomNav';
 import { ModuleErrorBoundary } from './ModuleErrorBoundary';
@@ -11,6 +12,7 @@ export function AppShell() {
   return (
     <div className="flex min-h-screen">
       <ProfileSync />
+      <AchievementWatcher />
       <Sidebar />
       <div className="flex min-w-0 flex-1 flex-col">
         <TopBar />
