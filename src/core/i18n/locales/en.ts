@@ -1,0 +1,33 @@
+import type { uk } from './uk';
+
+export const en: typeof uk = {
+  common: {
+    appName: 'Sonyashyk',
+    nav: { more: 'More', menu: 'Menu', collapse: 'Collapse menu', main: 'Main navigation' },
+    greeting: {
+      morning: 'Good morning, {{name}} 🌸',
+      day: 'Good afternoon, {{name}} ☀️',
+      evening: 'Good evening, {{name}} 🌙',
+      night: 'Remember to rest, {{name}} ✨',
+    },
+    defaultName: 'sunshine',
+    loading: 'Loading…',
+    error: {
+      title: 'Oops, something went wrong',
+      text: 'Try refreshing the page.',
+      retry: 'Try again',
+    },
+    auth: {
+      notConfigured: 'Supabase setup required',
+      notConfiguredHint: 'Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to .env.local.',
+      title: 'Sign in to Sonyashyk 🌻',
+      subtitle: 'This space is private. Sign in with your email.',
+      email: 'Email',
+      password: 'Password',
+      submit: 'Sign in',
+      invalid: 'Could not sign in. Check your email and password.',
+      required: 'Please fill this in',
+    },
+    empty: { title: 'Nothing here yet' },
+  },
+};

@@ -1,0 +1,60 @@
+import { lazy } from 'react';
+import { UserRound } from 'lucide-react';
+import type { AppModule } from '@/core/modules/types';
+
+const ProfilePage = lazy(() => import('./pages/ProfilePage'));
+
+export const profileModule: AppModule = {
+  id: 'profile',
+  version: '0.1.0',
+  title: 'profile:title',
+  icon: UserRound,
+  emoji: '🌸',
+  enabledByDefault: true,
+  nav: { order: 90, placement: 'main' },
+  routes: [{ index: true, element: <ProfilePage /> }],
+  i18n: {
+    uk: {
+      title: 'Профіль',
+      heading: 'Мій кабінет',
+      displayName: 'Ім’я',
+      bio: 'Про мене',
+      avatar: 'Емодзі-аватар',
+      timezone: 'Часовий пояс',
+      rollover: 'Новий день починається о (година)',
+      language: 'Мова',
+      theme: 'Тема',
+      themeLight: 'Світла',
+      themeDark: 'Темна',
+      themeSystem: 'Як у системі',
+      goal: 'Денна ціль XP',
+      save: 'Зберегти',
+      saved: 'Збережено ✨',
+      saveError: 'Не вдалося зберегти. Спробуй ще раз.',
+      security: 'Безпека',
+      signOut: 'Вийти',
+      signOutAll: 'Вийти на всіх пристроях',
+    },
+    en: {
+      title: 'Profile',
+      heading: 'My cabinet',
+      displayName: 'Name',
+      bio: 'About me',
+      avatar: 'Emoji avatar',
+      timezone: 'Timezone',
+      rollover: 'New day starts at (hour)',
+      language: 'Language',
+      theme: 'Theme',
+      themeLight: 'Light',
+      themeDark: 'Dark',
+      themeSystem: 'System',
+      goal: 'Daily XP goal',
+      save: 'Save',
+      saved: 'Saved ✨',
+      saveError: 'Could not save. Please try again.',
+      security: 'Security',
+      signOut: 'Sign out',
+      signOutAll: 'Sign out on all devices',
+    },
+  },
+};
