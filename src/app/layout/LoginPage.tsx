@@ -16,7 +16,10 @@ const inputClass =
 
 export function LoginPage() {
   const { t } = useTranslation();
-  const { session, signIn } = useAuth();
+  const { session, needsMfa, signIn, verifyMfa, signOut } = useAuth();
+  const [code, setCode] = useState('');
+  const [mfaFailed, setMfaFailed] = useState(false);
+  const [verifying, setVerifying] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const [failed, setFailed] = useState(false);
@@ -35,14 +38,64 @@ export function LoginPage() {
       </EmptyState>
     );
   }
-  if (session) return <Navigate to={from} replace />;
+  if (session && !needsMfa) return <Navigate to={from} replace />;
 
   const onSubmit = async (values: Values) => {
     setFailed(false);
-    const { error } = await signIn(values.email, values.password);
+    const { error, mfa } = await signIn(values.email, values.password);
     if (error) setFailed(true);
-    else navigate(from, { replace: true });
+    else if (!mfa) navigate(from, { replace: true });
   };
+
+  const onVerify = async () => {
+    setMfaFailed(false);
+    setVerifying(true);
+    const ok = await verifyMfa(code.trim());
+    setVerifying(false);
+    if (ok) navigate(from, { replace: true });
+    else setMfaFailed(true);
+  };
+
+  if (session && needsMfa) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[image:var(--gradient-hero)] p-4">
+        <Card className="w-full max-w-sm">
+          <h1 className="mb-1 text-2xl font-bold">{t('auth.mfaTitle')}</h1>
+          <p className="mb-5 text-text-muted">{t('auth.mfaHint')}</p>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              void onVerify();
+            }}
+            className="grid gap-4"
+          >
+            <label className="grid gap-1 font-semibold">
+              {t('auth.mfaCode')}
+              <input
+                inputMode="numeric"
+                autoComplete="one-time-code"
+                maxLength={6}
+                className={inputClass}
+                value={code}
+                onChange={(e) => setCode(e.target.value.replace(/\D/g, ''))}
+              />
+            </label>
+            {mfaFailed && (
+              <p role="alert" className="text-sm text-danger">
+                {t('auth.mfaInvalid')}
+              </p>
+            )}
+            <Button type="submit" disabled={verifying || code.length !== 6}>
+              {t('auth.mfaSubmit')}
+            </Button>
+            <Button variant="ghost" onClick={() => void signOut()}>
+              {t('auth.mfaCancel')}
+            </Button>
+          </form>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-[image:var(--gradient-hero)] p-4">

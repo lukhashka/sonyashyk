@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Flame } from 'lucide-react';
+import { Avatar } from '@/core/auth/Avatar';
 import { useProfile } from '@/core/auth/profile';
 import { getDayPart } from '@/core/lib/greeting';
 import { Badge } from '@/shared/ui';
@@ -20,9 +21,7 @@ export function TopBar() {
           <Flame size={16} strokeWidth={1.75} aria-hidden="true" />
           <span>0</span>
         </Badge>
-        <span aria-hidden="true" className="text-2xl">
-          {profile?.avatar_emoji ?? '🌻'}
-        </span>
+        <Avatar path={profile?.avatar_url} emoji={profile?.avatar_emoji ?? '🌻'} size={36} />
       </div>
     </header>
   );

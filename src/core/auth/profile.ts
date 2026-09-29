@@ -19,6 +19,7 @@ export type Profile = ProfileUpdate & {
   id: string;
   role: 'user' | 'admin';
   enabled_modules: string[];
+  avatar_url: string | null;
 };
 
 const key = (userId: string | undefined) => ['profile', userId] as const;

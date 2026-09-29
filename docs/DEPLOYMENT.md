@@ -12,6 +12,9 @@ The repository is **public**: never commit keys. Everything secret goes into Git
 6. Authentication → URL Configuration: Site URL = your `https://<project>.pages.dev`; add `http://localhost:5173` to Redirect URLs.
 7. Authentication → Users → **Invite user** to create her account.
 8. (Optional) run `supabase/tests/rls_profiles.sql` in the SQL editor: it must print `PASS` and rolls back.
+9. Authentication → Multi-Factor: make sure **TOTP** is enabled (needed for Profile → Two-factor).
+10. Storage/RLS tests (`supabase/tests/*.sql`) run automatically in the `DB migrate` workflow; you can also run them in the SQL editor: each must print `PASS` and rolls back.
+11. The `delete-account` Edge Function is deployed by the same workflow (`supabase functions deploy`); its service-role key is injected by Supabase, nothing to configure.
 
 ## 2. GitHub
 

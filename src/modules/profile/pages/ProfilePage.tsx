@@ -10,6 +10,10 @@ import {
   type ProfileUpdate,
 } from '@/core/auth/profile';
 import { Button, Card, Skeleton } from '@/shared/ui';
+import { AvatarPicker } from '../components/AvatarPicker';
+import { DataCard } from '../components/DataCard';
+import { PasswordCard } from '../components/PasswordCard';
+import { TwoFactorCard } from '../components/TwoFactorCard';
 
 const field = 'min-h-11 w-full rounded-md border border-border bg-surface px-4 text-text';
 
@@ -47,6 +51,7 @@ export default function ProfilePage() {
             {t('bio')}
             <input className={field} maxLength={160} {...register('bio')} />
           </label>
+          <AvatarPicker path={profile.avatar_url} emoji={profile.avatar_emoji} />
           <label className="grid gap-1 font-semibold">
             {t('avatar')}
             <input className={field} maxLength={16} {...register('avatar_emoji')} />
@@ -112,6 +117,10 @@ export default function ProfilePage() {
           </Button>
         </div>
       </Card>
+
+      <PasswordCard />
+      <TwoFactorCard />
+      <DataCard />
     </div>
   );
 }

@@ -11,3 +11,10 @@ export const supabase = createClient(
   anonKey ?? 'missing-anon-key',
   { auth: { flowType: 'pkce', autoRefreshToken: true, persistSession: true } },
 );
+
+/** Throw-away client that never touches the stored session (used to re-check a password). */
+export function createEphemeralClient() {
+  return createClient(url ?? 'http://localhost:54321', anonKey ?? 'missing-anon-key', {
+    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+  });
+}

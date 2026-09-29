@@ -7,7 +7,7 @@ import { useAuth } from './AuthProvider';
 /** UX guard only. Real protection is Row Level Security in the database. */
 export function RequireAuth() {
   const { t } = useTranslation();
-  const { session, loading } = useAuth();
+  const { session, loading, needsMfa } = useAuth();
   const location = useLocation();
 
   if (!isSupabaseConfigured) {
@@ -18,6 +18,7 @@ export function RequireAuth() {
     );
   }
   if (loading) return <Skeleton className="m-6 h-40" />;
-  if (!session) return <Navigate to="/login" replace state={{ from: location.pathname }} />;
+  if (!session || needsMfa)
+    return <Navigate to="/login" replace state={{ from: location.pathname }} />;
   return <Outlet />;
 }
