@@ -1,0 +1,73 @@
+analyse|verb|/ˈænəlaɪz/|аналізувати|To examine something carefully in order to understand it.|Students must analyse the case and explain the decision.|academic|B2
+approach|noun|/əˈprəʊtʃ/|підхід|A way of dealing with a subject or problem.|The court took a cautious approach.|academic|B1
+assume|verb|/əˈsjuːm/|припускати|To accept that something is true without proof.|We assume that both parties acted in good faith.|academic|B2
+assess|verb|/əˈses/|оцінювати|To judge the quality, size or value of something.|The judge must assess the credibility of the witness.|academic|B2
+concept|noun|/ˈkɒnsept/|поняття, концепція|An abstract idea.|The concept of justice differs between cultures.|academic|B2
+conclude|verb|/kənˈkluːd/|робити висновок|To decide something after considering the facts.|The court concluded that the contract was valid.|academic|B2
+consequence|noun|/ˈkɒnsɪkwəns/|наслідок|A result of an action or event.|Ignoring the law can have serious consequences.|academic|B1
+consistent|adjective|/kənˈsɪstənt/|послідовний, узгоджений|Always behaving or happening in the same way.|Her statements were consistent throughout the trial.|academic|B2
+context|noun|/ˈkɒntekst/|контекст|The situation in which something happens.|The clause must be read in context.|academic|B2
+criteria|noun|/kraɪˈtɪəriə/|критерії|Standards used to judge or decide something.|The applicant must meet several criteria.|academic|B2
+demonstrate|verb|/ˈdemənstreɪt/|демонструвати, доводити|To show clearly that something is true.|The evidence demonstrates that he was present.|academic|B2
+derive|verb|/dɪˈraɪv/|походити, виводити|To obtain something from a source.|Many legal terms derive from Latin.|academic|C1
+distinguish|verb|/dɪˈstɪŋɡwɪʃ/|розрізняти|To recognise the difference between things.|The judge distinguished this case from the earlier one.|academic|B2
+emphasise|verb|/ˈemfəsaɪz/|підкреслювати|To show that something is especially important.|The lawyer emphasised the importance of the evidence.|academic|B2
+establish|verb|/ɪˈstæblɪʃ/|встановлювати, засновувати|To prove a fact, or to set up an organisation.|The claimant must establish that the defendant was at fault.|academic|B2
+evaluate|verb|/ɪˈvæljueɪt/|оцінювати, аналізувати|To judge the value or quality of something.|The committee will evaluate all applications.|academic|B2
+factor|noun|/ˈfæktə/|чинник, фактор|One of the things that influences a result.|Age is an important factor in the sentence.|academic|B1
+function|noun|/ˈfʌŋkʃn/|функція|The purpose or role of something.|The main function of the court is to resolve disputes.|academic|B1
+hypothesis|noun|/haɪˈpɒθəsɪs/|гіпотеза|An idea that is proposed as an explanation but not yet proved.|The hypothesis was tested in the study.|academic|C1
+identify|verb|/aɪˈdentɪfaɪ/|визначати, ідентифікувати|To recognise and name someone or something.|Witnesses were unable to identify the driver.|academic|B1
+illustrate|verb|/ˈɪləstreɪt/|ілюструвати|To explain something using examples.|This case illustrates the problem well.|academic|B2
+imply|verb|/ɪmˈplaɪ/|мати на увазі, припускати|To suggest something without saying it directly.|The wording implies that payment is required.|academic|B2
+indicate|verb|/ˈɪndɪkeɪt/|вказувати|To show or point to something.|The results indicate that the law is effective.|academic|B2
+interpret|verb|/ɪnˈtɜːprɪt/|тлумачити|To explain the meaning of something.|Judges interpret the statute according to its purpose.|academic|B2
+interpretation|noun|/ɪnˌtɜːprɪˈteɪʃn/|тлумачення|An explanation of what something means.|The court's interpretation of the clause was narrow.|academic|B2
+issue|noun|/ˈɪʃuː/|питання, проблема|An important topic or problem for discussion.|The main issue is whether the contract was valid.|academic|B1
+justify|verb|/ˈdʒʌstɪfaɪ/|виправдовувати, обґрунтовувати|To show that something is reasonable or right.|Nothing can justify violence.|academic|B2
+maintain|verb|/meɪnˈteɪn/|підтримувати; стверджувати|To keep something as it is, or to state firmly.|He maintained that he was innocent.|academic|B2
+method|noun|/ˈmeθəd/|метод, спосіб|A particular way of doing something.|Researchers used a new method of analysis.|academic|B1
+obtain|verb|/əbˈteɪn/|отримувати|To get something, often with effort.|Police obtained a warrant to search the house.|academic|B2
+occur|verb|/əˈkɜː/|відбуватися|To happen.|The accident occurred late at night.|academic|B2
+overcome|verb|/ˌəʊvəˈkʌm/|долати|To succeed in dealing with a problem.|The claimant must overcome several legal obstacles.|academic|B2
+participate|verb|/pɑːˈtɪsɪpeɪt/|брати участь|To take part in an activity.|All members may participate in the vote.|academic|B2
+perceive|verb|/pəˈsiːv/|сприймати, усвідомлювати|To understand or notice something in a certain way.|The public perceives the law as unfair.|academic|C1
+policy|noun|/ˈpɒləsi/|політика, принцип|A plan or principle followed by a government or organisation.|The company has a strict privacy policy.|academic|B2
+principle|noun|/ˈprɪnsəpl/|принцип|A basic rule or belief.|The principle of fairness applies to all cases.|academic|B2
+procedure|noun|/prəˈsiːdʒə/|процедура|The official way of doing something.|The procedure for appeal is described on the website.|academic,procedure|B2
+proceed|verb|/prəˈsiːd/|продовжувати, вживати заходів|To continue, or to start legal action.|The claimant decided to proceed with the case.|academic,procedure|B2
+process|noun|/ˈprəʊses/|процес|A series of steps taken to achieve a result.|The application process takes about six weeks.|academic|B1
+require|verb|/rɪˈkwaɪə/|вимагати|To need something, or to make it compulsory.|The law requires employers to keep records.|academic|B1
+requirement|noun|/rɪˈkwaɪəmənt/|вимога|Something that is needed or compulsory.|A valid passport is a requirement for entry.|academic|B2
+research|noun|/rɪˈsɜːtʃ/|дослідження|Careful study to discover new facts.|Her research focuses on international law.|academic|B1
+resolve|verb|/rɪˈzɒlv/|вирішувати, розв'язувати|To find a solution to a problem or dispute.|They tried to resolve the dispute without going to court.|academic|B2
+respond|verb|/rɪˈspɒnd/|відповідати, реагувати|To answer or react to something.|The defendant has 14 days to respond.|academic|B1
+restrict|verb|/rɪˈstrɪkt/|обмежувати|To limit something.|The law restricts the sale of alcohol to minors.|academic|B2
+reveal|verb|/rɪˈviːl/|розкривати, виявляти|To make known something that was secret.|The investigation revealed serious mistakes.|academic|B2
+role|noun|/rəʊl/|роль|The part someone plays in a situation.|The judge plays a neutral role in the trial.|academic|B1
+significant|adjective|/sɪɡˈnɪfɪkənt/|значний, суттєвий|Important enough to have a noticeable effect.|There was a significant delay in the proceedings.|academic|B2
+specific|adjective|/spəˈsɪfɪk/|конкретний|Clearly defined; not general.|The contract lists specific duties for each party.|academic|B2
+strategy|noun|/ˈstrætədʒi/|стратегія|A plan for achieving a long-term goal.|The defence strategy focused on the lack of evidence.|academic|B2
+submit|verb|/səbˈmɪt/|подавати (документи)|To hand in a document for consideration.|You must submit the form before the deadline.|academic,procedure|B2
+sufficient|adjective|/səˈfɪʃnt/|достатній|Enough for a particular purpose.|There was not sufficient evidence to convict him.|academic,evidence|B2
+summarise|verb|/ˈsʌməraɪz/|підсумовувати|To give the main points briefly.|The judge summarised the arguments for the jury.|academic|B2
+theory|noun|/ˈθɪəri/|теорія|A set of ideas that explains something.|Legal theory studies the nature of law.|academic|B2
+transfer|verb|/trænsˈfɜː/|передавати|To move something or give it to another person.|The owner transferred the property to his son.|academic,property|B2
+valid|adjective|/ˈvælɪd/|дійсний, чинний|Legally acceptable or properly made.|The contract is valid only if both sides sign it.|academic,contract|B2
+vary|verb|/ˈveəri/|відрізнятися, змінюватися|To be different or to change.|Punishments vary from country to country.|academic|B2
+whereas|conjunction|/weərˈæz/|тоді як|Used to compare two facts, or at the start of a legal preamble.|Whereas the first clause is clear, the second is not.|academic,contract|B2
+notwithstanding|preposition|/ˌnɒtwɪθˈstændɪŋ/|незважаючи на|Despite something; used in formal legal texts.|Notwithstanding the above, the buyer may cancel.|academic,contract|C1
+hereby|adverb|/ˌhɪəˈbaɪ/|цим (у формулах документів)|By means of this document or statement.|I hereby declare that the information is true.|academic,contract|C1
+thereof|adverb|/ˌðeərˈɒv/|з цього, його (у юридичному стилі)|Of that; relating to the thing just mentioned.|The seller must pay the price or any part thereof.|academic,contract|C1
+herein|adverb|/ˌhɪərˈɪn/|у цьому (документі)|In this document.|The terms set out herein are final.|academic,contract|C1
+pursuant to|preposition|/pəˈsjuːənt tuː/|відповідно до|In accordance with a law or rule.|Pursuant to Article 5, the fee is due.|academic,contract|C1
+provided that|conjunction|/prəˈvaɪdɪd ðæt/|за умови, що|Only if a certain condition is met.|The tenant may sublet, provided that the landlord agrees.|academic,contract|C1
+in accordance with|preposition|/ɪn əˈkɔːdns wɪð/|відповідно до|Following a rule, law or instruction.|The work was done in accordance with the contract.|academic,contract|B2
+subject to|preposition|/ˈsʌbdʒekt tuː/|за умови, з урахуванням|Depending on or controlled by something.|The sale is subject to contract.|academic,contract|C1
+liable|adjective|/ˈlaɪəbl/|відповідальний (юридично)|Legally responsible for something.|The driver was held liable for the damage.|academic,tort|B2
+lawful|adjective|/ˈlɔːfl/|законний|Allowed by law.|The arrest was lawful.|academic,criminal|B2
+unlawful|adjective|/ʌnˈlɔːfl/|незаконний|Not allowed by law.|The dismissal was ruled unlawful.|academic,criminal|B2
+legitimate|adjective|/lɪˈdʒɪtɪmət/|законний, обґрунтований|Allowed by law, or fair and reasonable.|The company had a legitimate reason for the decision.|academic|C1
+impartial|adjective|/ɪmˈpɑːʃl/|неупереджений|Fair and not supporting one side.|A judge must always be impartial.|academic,procedure|C1
+allege|verb|/əˈledʒ/|стверджувати (без доказів), закидати|To claim that someone did something wrong without proof.|The claimant alleges that the company ignored the risks.|academic,procedure|C1
+dispute|noun|/dɪˈspjuːt/|спір|A serious disagreement, often taken to court.|The dispute concerns the boundary of the land.|academic,procedure|B2

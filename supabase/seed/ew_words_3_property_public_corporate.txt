@@ -1,0 +1,75 @@
+property|noun|/ˈprɒpəti/|власність, майно|Things that belong to someone, such as land, buildings or goods.|The law protects private property.|property|B1
+ownership|noun|/ˈəʊnəʃɪp/|право власності|The legal right to own something.|Proof of ownership is required to sell the house.|property|B2
+title|noun|/ˈtaɪtl/|право власності, титул|The legal right to own property, or a document proving it.|The seller has a clear title to the land.|property|C1
+owner|noun|/ˈəʊnə/|власник|A person who legally owns something.|The owner of the flat lives abroad.|property|B1
+possession|noun|/pəˈzeʃn/|володіння|Having or holding something, even if you do not own it.|The police found drugs in his possession.|property,criminal|B2
+freehold|noun|/ˈfriːhəʊld/|повна власність на нерухомість|Ownership of land and buildings for an unlimited time.|They bought the freehold of the building.|property|C1
+leasehold|noun|/ˈliːshəʊld/|оренда нерухомості (довгострокова)|Right to use property for a fixed period under a lease.|The flat is leasehold with 90 years remaining.|property|C1
+mortgage|noun|/ˈmɔːɡɪdʒ/|іпотека|A loan used to buy property, secured on that property.|They took out a mortgage to buy their first home.|property|B2
+easement|noun|/ˈiːzmənt/|сервітут|A right to use another person's land for a limited purpose.|The neighbour has an easement to cross the garden.|property|C1
+inheritance|noun|/ɪnˈherɪtəns/|спадщина|Money or property received from a person who has died.|She spent her inheritance on a small flat.|property,family|B2
+will|noun|/wɪl/|заповіт|A legal document saying who gets a person's property after death.|He left everything to his sister in his will.|property,family|B1
+testator|noun|/teˈsteɪtə/|заповідач|A person who makes a will.|The testator signed the will in front of two witnesses.|property,family|C1
+heir|noun|/eə/|спадкоємець|A person who inherits property from someone who dies.|The eldest son is the sole heir.|property,family|B2
+estate|noun|/ɪˈsteɪt/|майно, спадкова маса|All the property and money a person leaves at death.|The estate was divided among three children.|property,family|B2
+trust|noun|/trʌst/|траст, довірче управління|An arrangement where one person manages property for another.|The money is held in trust for the children.|property|C1
+trustee|noun|/trʌˈstiː/|довірена особа, керуючий трастом|A person who manages property for the benefit of others.|The trustee must act in the interests of the beneficiaries.|property|C1
+beneficiary|noun|/ˌbenɪˈfɪʃəri/|вигодонабувач, бенефіціар|A person who receives money or property from a will, trust or policy.|She is the main beneficiary of the will.|property|C1
+intestate|adjective|/ɪnˈtesteɪt/|без заповіту|Having died without making a valid will.|If he dies intestate, the law decides who inherits.|property,family|C1
+probate|noun|/ˈprəʊbeɪt/|затвердження заповіту|Official proof that a will is valid.|The court granted probate two months later.|property,family|C1
+copyright|noun|/ˈkɒpiraɪt/|авторське право|The legal right to control copying of creative works.|The book is protected by copyright.|property|B2
+patent|noun|/ˈpeɪtnt/|патент|An official right to be the only one to make or sell an invention.|The company filed a patent for its new device.|property,corporate|B2
+trademark|noun|/ˈtreɪdmɑːk/|торгова марка|A registered symbol or name that identifies a company's product.|Nobody else may use our trademark.|property,corporate|B2
+infringement|noun|/ɪnˈfrɪndʒmənt/|порушення (права)|Breaking a law or violating someone's rights.|The court found infringement of the patent.|property|C1
+company|noun|/ˈkʌmpəni/|компанія, товариство|A business organisation with legal personality.|The company was registered last year.|corporate|B1
+corporation|noun|/ˌkɔːpəˈreɪʃn/|корпорація|A large company treated as a legal person.|The corporation employs thousands of workers.|corporate|B2
+shareholder|noun|/ˈʃeəhəʊldə/|акціонер|A person who owns shares in a company.|Every shareholder can vote at the annual meeting.|corporate|B2
+share|noun|/ʃeə/|акція; частка|A unit of ownership in a company.|He bought shares in the bank.|corporate|B1
+director|noun|/dəˈrektə/|директор, член ради директорів|A person who helps manage a company.|The directors approved the annual report.|corporate|B2
+partnership|noun|/ˈpɑːtnəʃɪp/|партнерство, товариство|A business owned and run by two or more people.|They formed a partnership to run the law firm.|corporate|B2
+merger|noun|/ˈmɜːdʒə/|злиття|Joining two companies into one.|The merger created the largest bank in the country.|corporate|C1
+acquisition|noun|/ˌækwɪˈzɪʃn/|поглинання, придбання|The purchase of one company by another.|The acquisition was approved by the regulator.|corporate|C1
+bankruptcy|noun|/ˈbæŋkrʌptsi/|банкрутство|A legal state where a person or company cannot pay debts.|The firm filed for bankruptcy.|corporate|B2
+insolvency|noun|/ɪnˈsɒlvənsi/|неплатоспроможність|Being unable to pay debts when they are due.|Insolvency forced the company to close.|corporate|C1
+creditor|noun|/ˈkredɪtə/|кредитор|A person or organisation that is owed money.|The creditors demanded immediate payment.|corporate,contract|B2
+debtor|noun|/ˈdetə/|боржник|A person or organisation that owes money.|The debtor promised to pay within a month.|corporate,contract|B2
+liquidation|noun|/ˌlɪkwɪˈdeɪʃn/|ліквідація|Closing a company and selling its assets to pay debts.|The company went into liquidation.|corporate|C1
+asset|noun|/ˈæset/|актив, майно|Something valuable that a person or company owns.|The court froze the company's assets.|corporate,property|B2
+compliance|noun|/kəmˈplaɪəns/|дотримання вимог, комплаєнс|Obeying rules, laws or standards.|The bank has a strict compliance department.|corporate,public|C1
+due diligence|noun|/djuː ˈdɪlɪdʒəns/|належна перевірка|Careful checking of facts before making an agreement.|The buyer carried out due diligence on the company.|corporate,contract|C1
+confidentiality|noun|/ˌkɒnfɪdenʃiˈæləti/|конфіденційність|The duty to keep information secret.|The contract includes a confidentiality clause.|corporate,contract|C1
+employment|noun|/ɪmˈplɔɪmənt/|працевлаштування, найм|Work done for an employer in exchange for pay.|Employment law protects workers from unfair dismissal.|corporate|B1
+employer|noun|/ɪmˈplɔɪə/|роботодавець|A person or company that pays people to work.|The employer must provide a safe workplace.|corporate|B1
+employee|noun|/ɪmˈplɔɪiː/|працівник|A person who works for an employer.|Each employee receives a written contract.|corporate|B1
+dismissal|noun|/dɪsˈmɪsl/|звільнення|Ending someone's employment.|The tribunal ruled that the dismissal was unfair.|corporate|B2
+redundancy|noun|/rɪˈdʌndənsi/|скорочення штату|Losing a job because the employer no longer needs the position.|Redundancy pay depends on years of service.|corporate|C1
+constitution|noun|/ˌkɒnstɪˈtjuːʃn/|конституція|The basic laws that describe how a state is governed.|The constitution guarantees freedom of speech.|public|B2
+constitutional|adjective|/ˌkɒnstɪˈtjuːʃənl/|конституційний|Relating to or allowed by a constitution.|The court declared the law unconstitutional.|public|C1
+sovereignty|noun|/ˈsɒvrənti/|суверенітет|The supreme power of a state to govern itself.|The treaty respects the sovereignty of each state.|public|C1
+legislature|noun|/ˈledʒɪsleɪtʃə/|законодавчий орган|The body that makes laws.|The legislature passed the bill by a large majority.|public|C1
+parliament|noun|/ˈpɑːləmənt/|парламент|The elected body that makes laws in many countries.|Parliament will vote on the proposal tomorrow.|public|B1
+bill|noun|/bɪl/|законопроєкт|A proposed law discussed by a legislature.|The bill became law after the final vote.|public|B2
+enact|verb|/ɪˈnækt/|ухвалювати (закон)|To make a proposal officially into law.|The government enacted a new privacy law.|public|C1
+amend|verb|/əˈmend/|вносити зміни (до закону)|To change a law or document formally.|Parliament voted to amend the constitution.|public,contract|C1
+repeal|verb|/rɪˈpiːl/|скасовувати (закон)|To officially cancel a law.|The old law was repealed in 2015.|public|C1
+citizen|noun|/ˈsɪtɪzn/|громадянин|A person with full legal membership of a state.|Every citizen has the right to vote.|public|B1
+citizenship|noun|/ˈsɪtɪznʃɪp/|громадянство|The legal status of being a citizen of a country.|She applied for Ukrainian citizenship.|public|B2
+right|noun|/raɪt/|право|Something that a person is legally allowed to have or do.|Everyone has the right to a fair trial.|public|B1
+freedom|noun|/ˈfriːdəm/|свобода|The power to act and speak without unfair limits.|Freedom of expression is a basic human right.|public|B1
+equality|noun|/ɪˈkwɒləti/|рівність|Equal rights and treatment for everyone.|Equality before the law is a core principle.|public|B2
+discrimination|noun|/dɪˌskrɪmɪˈneɪʃn/|дискримінація|Unfair treatment of a person because of their group or identity.|The law prohibits discrimination at work.|public|B2
+privacy|noun|/ˈprɪvəsi/|приватність|The right to keep personal matters secret.|The law protects citizens' privacy.|public|B2
+human rights|noun|/ˌhjuːmən ˈraɪts/|права людини|Basic rights that belong to every person.|The court must respect human rights.|public|B2
+treaty|noun|/ˈtriːti/|договір (міжнародний)|A formal written agreement between countries.|The two states signed a peace treaty.|public|B2
+convention|noun|/kənˈvenʃn/|конвенція|An international agreement on a specific matter.|The convention protects the rights of the child.|public|B2
+ratify|verb|/ˈrætɪfaɪ/|ратифікувати|To formally approve a treaty so that it becomes binding.|Parliament voted to ratify the agreement.|public|C1
+sanction|noun|/ˈsæŋkʃn/|санкція|A penalty for breaking a rule, or official permission.|The country faced economic sanctions.|public|C1
+authority|noun|/ɔːˈθɒrəti/|орган влади; повноваження|A body or person with official power.|The local authority issued the permit.|public|B2
+government|noun|/ˈɡʌvənmənt/|уряд|The group of people that rules a country.|The government introduced a new tax.|public|B1
+minister|noun|/ˈmɪnɪstə/|міністр|A senior member of the government who leads a department.|The minister answered questions in parliament.|public|B1
+tribunal|noun|/traɪˈbjuːnl/|трибунал, спеціалізований суд|A special court that deals with a particular type of dispute.|The employment tribunal upheld her claim.|procedure|C1
+guardian|noun|/ˈɡɑːdiən/|опікун|A person legally responsible for a child or protected adult.|The court appointed a guardian for the boy.|family|B2
+marriage|noun|/ˈmærɪdʒ/|шлюб|The legal union of two people.|The marriage was registered at the town hall.|family|B1
+divorce|noun|/dɪˈvɔːs/|розлучення|The legal ending of a marriage.|Their divorce was finalised in June.|family|B1
+alimony|noun|/ˈælɪməni/|аліменти (подружжю)|Money paid to a former spouse after a divorce.|He pays alimony to his former wife.|family|C1
+adoption|noun|/əˈdɒpʃn/|усиновлення|Legally taking a child into your family as your own.|The adoption was approved by the court.|family|B2

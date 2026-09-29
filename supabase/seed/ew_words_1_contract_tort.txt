@@ -1,0 +1,73 @@
+# term|pos|ipa|translation_uk|definition_en|example_en|topics|level
+contract|noun|/ˈkɒntrækt/|договір, контракт|A legally binding agreement between two or more parties.|Both parties signed the contract before the deadline.|contract|B1
+agreement|noun|/əˈɡriːmənt/|угода, домовленість|An arrangement between people about what each will do.|They reached an agreement after a long negotiation.|contract|B1
+party|noun|/ˈpɑːti/|сторона (договору, справи)|A person or group involved in a contract or legal case.|Each party must receive a copy of the document.|contract,procedure|B1
+clause|noun|/klɔːz/|пункт, застереження|A separate section of a contract or law.|The clause limits the seller's responsibility.|contract|B1
+term|noun|/tɜːm/|умова; строк|A condition of an agreement, or a period of time.|The term of the lease is twelve months.|contract|B1
+obligation|noun|/ˌɒblɪˈɡeɪʃn/|зобов'язання|A duty that a person must legally perform.|The tenant has an obligation to pay rent on time.|contract|B2
+consideration|noun|/kənˌsɪdəˈreɪʃn/|зустрічне надання, відшкодування|Something of value exchanged by each party to make a contract valid.|Without consideration, the promise is not enforceable.|contract|C1
+offer|noun|/ˈɒfə/|оферта, пропозиція|A clear proposal to make a contract on stated terms.|She accepted the offer in writing.|contract|B1
+acceptance|noun|/əkˈseptəns/|акцепт, прийняття|Agreement to the terms of an offer.|Acceptance of the offer creates a binding contract.|contract|B2
+breach|noun|/briːtʃ/|порушення (договору)|A failure to keep a promise or obey a rule in a contract or law.|The late delivery was a serious breach of contract.|contract,tort|B2
+remedy|noun|/ˈremədi/|засіб захисту, відшкодування|A way the law gives to enforce a right or fix a wrong.|Damages are the usual remedy for breach of contract.|contract,procedure|B2
+damages|noun|/ˈdæmɪdʒɪz/|збитки, відшкодування шкоди|Money a court orders one party to pay for loss or harm.|The court awarded damages of ten thousand euros.|contract,tort|B2
+enforce|verb|/ɪnˈfɔːs/|забезпечувати виконання, примушувати|To make sure a law or agreement is obeyed.|A court can enforce the terms of the agreement.|contract,procedure|B2
+void|adjective|/vɔɪd/|недійсний|Having no legal effect from the beginning.|A contract made under threat is void.|contract|B2
+voidable|adjective|/ˈvɔɪdəbl/|оспорюваний|Valid until one party chooses to cancel it.|A contract signed by a minor may be voidable.|contract|C1
+terminate|verb|/ˈtɜːmɪneɪt/|припиняти, розривати|To end a contract or agreement.|The landlord may terminate the lease with notice.|contract|B2
+rescind|verb|/rɪˈsɪnd/|скасовувати, розривати|To cancel a contract and return the parties to their earlier positions.|He asked the court to rescind the sale.|contract|C1
+waive|verb|/weɪv/|відмовлятися (від права)|To voluntarily give up a right or claim.|The buyer waived the right to inspect the goods.|contract|C1
+warranty|noun|/ˈwɒrənti/|гарантія|A promise about the quality or condition of goods.|The car comes with a two-year warranty.|contract|B2
+guarantee|noun|/ˌɡærənˈtiː/|гарантія, поручительство|A promise to be responsible for a debt or duty.|The bank required a personal guarantee.|contract|B2
+indemnify|verb|/ɪnˈdemnɪfaɪ/|відшкодовувати збитки|To protect someone against loss by promising to compensate them.|The seller agreed to indemnify the buyer against any claims.|contract|C1
+liability|noun|/ˌlaɪəˈbɪləti/|відповідальність; зобов'язання|Legal responsibility for something, especially for harm or debt.|The company denied liability for the accident.|contract,tort|B2
+party autonomy|noun|/ˈpɑːti ɔːˈtɒnəmi/|свобода договору (автономія сторін)|The freedom of parties to decide the terms of their contract.|Party autonomy allows businesses to choose the governing law.|contract|C1
+binding|adjective|/ˈbaɪndɪŋ/|обов'язковий, який зобов'язує|Legally forcing people to obey or perform.|The decision is binding on all members.|contract,procedure|B2
+deed|noun|/diːd/|нотаріальний акт, документ|A signed legal document, especially about property.|She signed the deed in front of a witness.|contract,property|B2
+draft|verb|/drɑːft/|складати (проєкт документа)|To write the first version of a legal document.|The lawyer will draft the agreement this week.|contract|B1
+sign|verb|/saɪn/|підписувати|To write your name on a document to show agreement.|Please sign at the bottom of the page.|contract|B1
+signatory|noun|/ˈsɪɡnətri/|підписант, сторона що підписала|A person or state that has signed an agreement.|All signatories must approve any change.|contract|C1
+witness|noun|/ˈwɪtnəs/|свідок|A person who sees an event or signing and can say what happened.|A witness must sign the will.|contract,evidence|B1
+capacity|noun|/kəˈpæsəti/|дієздатність, правоздатність|The legal ability to make a binding decision or agreement.|A minor usually lacks the capacity to sign a contract.|contract|C1
+consent|noun|/kənˈsent/|згода|Permission or agreement given freely.|The patient gave informed consent to the treatment.|contract,criminal|B2
+duress|noun|/djʊˈres/|примус, тиск|Unlawful pressure that forces someone to act against their will.|He signed the paper under duress.|contract,criminal|C1
+misrepresentation|noun|/ˌmɪsreprɪzenˈteɪʃn/|введення в оману, викривлення фактів|A false statement that persuades someone to make a contract.|The buyer sued for misrepresentation of the car's history.|contract|C1
+fraud|noun|/frɔːd/|шахрайство|Deliberate deception to get money or advantage.|He was charged with fraud after forging the invoices.|contract,criminal|B2
+default|noun|/dɪˈfɔːlt/|невиконання зобов'язань, дефолт|Failure to pay a debt or do what an agreement requires.|The borrower is in default on the loan.|contract|B2
+penalty|noun|/ˈpenlti/|штраф, санкція|A punishment or extra payment for breaking a rule or contract.|The contract includes a penalty for late payment.|contract,criminal|B1
+lease|noun|/liːs/|оренда, договір оренди|A contract allowing someone to use property in exchange for rent.|They signed a five-year lease on the office.|contract,property|B2
+tenant|noun|/ˈtenənt/|орендар, наймач|A person who pays rent to use a property.|The tenant must report any repairs.|property,contract|B1
+landlord|noun|/ˈlændlɔːd/|орендодавець, власник житла|A person who owns property and rents it to others.|The landlord raised the rent this year.|property,contract|B1
+arbitration|noun|/ˌɑːbɪˈtreɪʃn/|арбітраж|Settling a dispute by a neutral person instead of a court.|The parties agreed to resolve disputes by arbitration.|contract,procedure|C1
+mediation|noun|/ˌmiːdiˈeɪʃn/|медіація|Helping opposing sides reach an agreement without a trial.|Mediation saved both sides time and money.|contract,procedure|C1
+settle|verb|/ˈsetl/|врегулювати, домовитися мирно|To end a dispute by agreement.|The parties decided to settle before trial.|contract,procedure|B2
+settlement|noun|/ˈsetlmənt/|мирова угода, врегулювання|An official agreement that ends a legal dispute.|The settlement was approved by the judge.|contract,procedure|B2
+tort|noun|/tɔːt/|делікт, цивільне правопорушення|A civil wrong that causes harm and gives the victim a right to compensation.|Negligence is the most common tort.|tort|B2
+negligence|noun|/ˈneɡlɪdʒəns/|недбалість, халатність|Failure to take reasonable care, causing harm to another.|The hospital was sued for medical negligence.|tort|B2
+duty of care|noun|/ˈdjuːti əv keə/|обов'язок обачності|A legal duty to avoid causing harm to others.|Drivers owe a duty of care to other road users.|tort|C1
+reasonable|adjective|/ˈriːznəbl/|розумний, обґрунтований|Fair, sensible and what an ordinary person would expect.|He took all reasonable steps to avoid the risk.|tort,general|B1
+foreseeable|adjective|/fɔːˈsiːəbl/|передбачуваний|Able to be expected or predicted.|The injury was a foreseeable result of the delay.|tort|C1
+causation|noun|/kɔːˈzeɪʃn/|причинний зв'язок|The link between an act and the harm it caused.|The claimant must prove causation.|tort,criminal|C1
+harm|noun|/hɑːm/|шкода|Physical or emotional damage or injury.|The law protects people from serious harm.|tort,criminal|B1
+injury|noun|/ˈɪndʒəri/|тілесне ушкодження, травма|Physical damage to a person's body.|She suffered a back injury at work.|tort,criminal|B1
+loss|noun|/lɒs/|збиток, втрата|Money or value that a person no longer has.|The firm claimed compensation for its financial loss.|tort,contract|B1
+compensation|noun|/ˌkɒmpenˈseɪʃn/|компенсація|Money paid to make up for harm or loss.|The victim received compensation for lost wages.|tort,contract|B2
+claimant|noun|/ˈkleɪmənt/|позивач (у Британії), заявник|A person who starts a civil claim in court.|The claimant asked for damages and legal costs.|tort,procedure|B2
+victim|noun|/ˈvɪktɪm/|потерпілий, жертва|A person harmed by a crime or accident.|The victim gave a statement to the police.|tort,criminal|B1
+nuisance|noun|/ˈnjuːsns/|неприємність, порушення спокою|Something that unreasonably disturbs the use of land or public rights.|Loud music at night can be a private nuisance.|tort,property|C1
+trespass|noun|/ˈtrespəs/|порушення меж власності|Entering another person's land or property without permission.|He was charged with trespass for crossing the fence.|tort,property|C1
+defamation|noun|/ˌdefəˈmeɪʃn/|наклеп, дифамація|Harming a person's reputation with false statements.|The politician sued the paper for defamation.|tort|C1
+libel|noun|/ˈlaɪbl/|наклеп (письмовий)|A false written statement that damages someone's reputation.|The article was found to be libel.|tort|C1
+slander|noun|/ˈslɑːndə/|наклеп (усний)|A false spoken statement that damages someone's reputation.|She sued him for slander after his speech.|tort|C1
+strict liability|noun|/strɪkt ˌlaɪəˈbɪləti/|відповідальність без вини|Responsibility for harm even without fault or intent.|Producers face strict liability for dangerous products.|tort,contract|C1
+vicarious liability|noun|/vɪˈkeəriəs ˌlaɪəˈbɪləti/|відповідальність за іншу особу|Responsibility of one person for the wrong done by another, such as an employee.|The employer has vicarious liability for its staff.|tort|C1
+contributory negligence|noun|/kənˈtrɪbjətri ˈneɡlɪdʒəns/|власна необережність потерпілого|Partial fault of the injured person that reduces compensation.|His compensation was cut for contributory negligence because he wore no seat belt.|tort|C1
+defence|noun|/dɪˈfens/|захист; заперечення|Arguments or evidence that a person is not liable or guilty.|Self-defence is a complete defence to the charge.|tort,criminal,procedure|B2
+fault|noun|/fɔːlt/|вина, провина|Responsibility for a mistake or wrong.|The court found the driver at fault.|tort|B1
+intention|noun|/ɪnˈtenʃn/|умисел, намір|A planned purpose to do something.|Intention is an important element of many crimes.|tort,criminal|B2
+recklessness|noun|/ˈrekləsnəs/|безрозсудність|Taking a serious risk without caring about the result.|The judge described his behaviour as recklessness.|tort,criminal|C1
+mitigate|verb|/ˈmɪtɪɡeɪt/|пом'якшувати, зменшувати наслідки|To make harm or loss less serious.|The claimant must mitigate his loss where possible.|tort,contract|C1
+restitution|noun|/ˌrestɪˈtjuːʃn/|реституція, повернення|Returning something to its owner or paying for its value.|The court ordered restitution of the stolen funds.|contract,tort|C1
+injunction|noun|/ɪnˈdʒʌŋkʃn/|судова заборона|A court order requiring someone to do or stop doing something.|The court granted an injunction against the publication.|tort,procedure|C1
+specific performance|noun|/spəˌsɪfɪk pəˈfɔːməns/|реальне виконання зобов'язання|A court order to carry out a contract instead of paying damages.|He sought specific performance of the sale of the land.|contract|C1
+unjust enrichment|noun|/ʌnˈdʒʌst ɪnˈrɪtʃmənt/|безпідставне збагачення|Unfairly gaining benefit at another person's expense.|The claim for unjust enrichment succeeded.|contract,tort|C1

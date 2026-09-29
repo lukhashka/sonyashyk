@@ -92,13 +92,28 @@ export async function exportMyData(): Promise<void> {
   const { data: profile, error } = await supabase.from('profiles').select('*').single();
   if (error) throw error;
   // Rows are limited to the caller's own by RLS.
-  const tables = ['daily_plans', 'daily_tasks', 'xp_events', 'streaks'] as const;
+  const tables = [
+    'daily_plans',
+    'daily_tasks',
+    'xp_events',
+    'streaks',
+    'ew_user_words',
+    'ew_reviews',
+    'ew_settings',
+  ] as const;
   const extra: Record<string, unknown> = {};
   for (const table of tables) {
     const { data, error: tableError } = await supabase.from(table).select('*');
     if (tableError) throw tableError;
     extra[table] = data;
   }
+  // The shared dictionary is not personal data; only the user's own custom words are exported.
+  const { data: custom, error: customError } = await supabase
+    .from('ew_words')
+    .select('*')
+    .not('owner_id', 'is', null);
+  if (customError) throw customError;
+  extra.ew_custom_words = custom;
   const payload = buildExport(userData.user, profile, new Date(), extra);
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);

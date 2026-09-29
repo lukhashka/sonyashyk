@@ -1,5 +1,14 @@
 # Changelog
 
+## Phase 4 — English words module (2026-09-29)
+
+- Migrations `english_words` + `ew_seed`: `ew_words` (shared dictionary + private custom words), `ew_user_words` (SRS state), `ew_reviews` (append-only answer log), `ew_settings` — RLS on all, custom-word cap, SQL isolation test `rls_ew.sql` (shared dictionary is read-only for clients, user B sees nothing of A).
+- 304 Legal English + academic words (term, POS, IPA, UA translation, definition, example, topics, level B1–C1) in `supabase/seed/ew_words_*.txt`; `scripts/gen-ew-seed.mjs` validates them and regenerates the idempotent seed migration.
+- SM-2-lite spaced repetition (1 → 3 days → interval × ease, lapses reset, known at ≥ 21 days), new/due word selection, quiz builder (EN→UA choice, UA→EN typing with typo tolerance, fill-the-gap, match pairs) — all pure and unit-tested.
+- New `english-words` module: hub (today's progress, new/review buttons, words per day 5–20, stats), session flow learn (flashcards + 🔊 Web Speech) → practice → match pairs → result (accuracy, mistakes, "known / still learning" per word), "My dictionary" (search, status/topic filters, mark as known, private custom words).
+- Daily provider: "Learn new words" (20 XP, progress 0/N) and, when reviews are due, "Review words" (10 XP); `words.learned` event emitted after a learn session.
+- "Export my data" includes SRS state, answer log, settings and custom words.
+
 ## Phase 3 — Daily engine & gamification core (2026-09-29)
 
 - Migration `daily_engine`: `daily_plans`, `daily_tasks`, `xp_events` (append-only ledger), `streaks` — RLS read-own only, no client writes.

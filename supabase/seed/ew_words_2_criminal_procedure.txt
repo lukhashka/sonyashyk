@@ -1,0 +1,84 @@
+crime|noun|/kraɪm/|злочин|An act that breaks the criminal law.|Theft is a crime in every country.|criminal|B1
+offence|noun|/əˈfens/|правопорушення|An illegal act that can be punished.|Driving without a licence is an offence.|criminal|B2
+felony|noun|/ˈfeləni/|тяжкий злочин (США)|A serious crime such as murder or robbery.|He was convicted of a felony and sent to prison.|criminal|C1
+misdemeanour|noun|/ˌmɪsdɪˈmiːnə/|проступок, злочин невеликої тяжкості|A minor crime with a lighter punishment.|Petty theft is usually a misdemeanour.|criminal|C1
+theft|noun|/θeft/|крадіжка|The crime of taking someone else's property without permission.|The theft of the laptop was reported to the police.|criminal|B1
+robbery|noun|/ˈrɒbəri/|грабіж, розбій|Stealing from a person using force or threat.|Two men were arrested for armed robbery.|criminal|B2
+burglary|noun|/ˈbɜːɡləri/|проникнення зі зломом, крадіжка зі зломом|Entering a building illegally to steal.|The burglary happened while the family was away.|criminal|B2
+assault|noun|/əˈsɔːlt/|напад, побиття|An attack or threat of attack on a person.|He was charged with assault after the fight.|criminal,tort|B2
+murder|noun|/ˈmɜːdə/|вбивство|The unlawful killing of a person on purpose.|The suspect was accused of murder.|criminal|B1
+manslaughter|noun|/ˈmænslɔːtə/|ненавмисне вбивство|Unlawful killing without planning or intending to kill.|She was found guilty of manslaughter.|criminal|C1
+bribery|noun|/ˈbraɪbəri/|хабарництво|Offering or taking money to influence someone's official actions.|The official was investigated for bribery.|criminal|C1
+corruption|noun|/kəˈrʌpʃn/|корупція|Dishonest or illegal behaviour by people in power.|The government promised to fight corruption.|criminal,public|B2
+perjury|noun|/ˈpɜːdʒəri/|лжесвідчення|Lying in court after promising to tell the truth.|He faced a charge of perjury.|criminal,evidence|C1
+forgery|noun|/ˈfɔːdʒəri/|підробка|Making a false document or signature to deceive.|The forgery was discovered by an expert.|criminal|C1
+blackmail|noun|/ˈblækmeɪl/|шантаж|Threatening to reveal secrets to force someone to pay or act.|She reported the blackmail to the police.|criminal|B2
+arson|noun|/ˈɑːsn/|підпал|The crime of deliberately setting fire to property.|The fire was caused by arson.|criminal|C1
+suspect|noun|/ˈsʌspekt/|підозрюваний|A person believed to have committed a crime.|The suspect was questioned for several hours.|criminal|B1
+accused|noun|/əˈkjuːzd/|обвинувачений|The person who is charged with a crime in court.|The accused pleaded not guilty.|criminal,procedure|B2
+defendant|noun|/dɪˈfendənt/|відповідач; підсудний|The person who is sued or charged in court.|The defendant denied all the allegations.|procedure,criminal|B2
+plaintiff|noun|/ˈpleɪntɪf/|позивач (США)|The person who brings a civil case to court.|The plaintiff claimed compensation for the injury.|procedure,tort|B2
+prosecutor|noun|/ˈprɒsɪkjuːtə/|прокурор, обвинувач|A lawyer who presents the case against the accused.|The prosecutor called three witnesses.|criminal,procedure|B2
+prosecution|noun|/ˌprɒsɪˈkjuːʃn/|кримінальне переслідування; сторона обвинувачення|The process of charging someone with a crime, or the side that does it.|The prosecution presented new evidence.|criminal,procedure|B2
+charge|verb|/tʃɑːdʒ/|висувати обвинувачення|To formally accuse someone of a crime.|Police charged him with fraud.|criminal|B1
+arrest|verb|/əˈrest/|заарештовувати, затримувати|To take a person into custody because of suspected crime.|They arrested the man at the airport.|criminal|B1
+custody|noun|/ˈkʌstədi/|тримання під вартою; опіка|Being held by police, or the legal right to care for a child.|The suspect remained in custody overnight.|criminal,family|B2
+bail|noun|/beɪl/|застава|Money paid to allow an accused person to stay free until trial.|The judge granted bail of five thousand pounds.|criminal,procedure|B2
+warrant|noun|/ˈwɒrənt/|ордер|An official paper allowing police to arrest or search.|Police obtained a warrant to search the house.|criminal,procedure|B2
+search|noun|/sɜːtʃ/|обшук|An official examination of a place or person for evidence.|The search of the car found no weapons.|criminal|B1
+interrogation|noun|/ɪnˌterəˈɡeɪʃn/|допит|Formal, intense questioning by police.|The interrogation lasted for six hours.|criminal|C1
+confession|noun|/kənˈfeʃn/|зізнання|A statement admitting guilt.|His confession was excluded as evidence.|criminal,evidence|B2
+investigation|noun|/ɪnˌvestɪˈɡeɪʃn/|розслідування|An official inquiry to discover the facts of a crime.|The investigation continued for two years.|criminal|B2
+trial|noun|/ˈtraɪəl/|судовий розгляд|A formal examination of a case in court.|The trial will begin next Monday.|procedure,criminal|B1
+verdict|noun|/ˈvɜːdɪkt/|вердикт|The decision of a jury about guilt or innocence.|The jury returned a verdict of not guilty.|procedure,criminal|B2
+sentence|noun|/ˈsentəns/|вирок, покарання|The punishment given by a court to a convicted person.|He received a sentence of five years in prison.|criminal|B2
+convict|verb|/kənˈvɪkt/|визнавати винним|To decide in court that someone is guilty of a crime.|The jury convicted her of fraud.|criminal|B2
+conviction|noun|/kənˈvɪkʃn/|обвинувальний вирок; судимість|A formal finding of guilt for a crime.|He has a previous conviction for theft.|criminal|B2
+acquit|verb|/əˈkwɪt/|виправдовувати|To decide in court that someone is not guilty.|The jury acquitted the defendant of all charges.|criminal|C1
+acquittal|noun|/əˈkwɪtl/|виправдувальний вирок|A court decision that a person is not guilty.|The acquittal surprised the public.|criminal|C1
+guilty|adjective|/ˈɡɪlti/|винний|Having committed a crime or offence.|The court found him guilty of theft.|criminal|B1
+innocent|adjective|/ˈɪnəsnt/|невинний|Not having committed a crime.|Everyone is presumed innocent until proven guilty.|criminal|B1
+plea|noun|/pliː/|заява про визнання/невизнання вини|A formal answer of guilty or not guilty to a charge.|He entered a plea of not guilty.|criminal,procedure|B2
+parole|noun|/pəˈrəʊl/|дострокове звільнення|Early release from prison under conditions.|The prisoner was granted parole after six years.|criminal|C1
+probation|noun|/prəˈbeɪʃn/|випробувальний термін, пробація|A period when an offender is supervised instead of being in prison.|She was sentenced to two years' probation.|criminal|C1
+imprisonment|noun|/ɪmˈprɪznmənt/|позбавлення волі|The state of being put in prison.|The crime carries life imprisonment.|criminal|B2
+fine|noun|/faɪn/|штраф|Money paid as punishment for an offence.|He had to pay a fine for speeding.|criminal|B1
+mens rea|noun|/ˌmenz ˈreɪə/|винний намір|The mental element of a crime: a guilty mind.|The prosecution must prove mens rea.|criminal|C1
+actus reus|noun|/ˌæktəs ˈreɪəs/|склад злочину, злочинна дія|The physical act that forms part of a crime.|Actus reus and mens rea must both be proved.|criminal|C1
+accomplice|noun|/əˈkʌmplɪs/|співучасник|A person who helps another commit a crime.|The accomplice drove the getaway car.|criminal|C1
+alibi|noun|/ˈælɪbaɪ/|алібі|Evidence that the accused was elsewhere when the crime happened.|His alibi was confirmed by two witnesses.|criminal,evidence|B2
+motive|noun|/ˈməʊtɪv/|мотив|The reason why someone commits a crime.|The police could not find a clear motive.|criminal|B2
+court|noun|/kɔːt/|суд|A place or body where legal cases are decided.|The case was heard in the High Court.|procedure|B1
+judge|noun|/dʒʌdʒ/|суддя|A public official who decides legal cases.|The judge asked for silence in the courtroom.|procedure|B1
+jury|noun|/ˈdʒʊəri/|присяжні|A group of citizens who decide the facts in a trial.|The jury deliberated for two days.|procedure|B2
+juror|noun|/ˈdʒʊərə/|присяжний|A member of a jury.|Each juror must be impartial.|procedure|C1
+counsel|noun|/ˈkaʊnsl/|адвокат, юрисконсульт|A lawyer who advises a client or argues a case.|Counsel for the defence asked for a short break.|procedure|C1
+barrister|noun|/ˈbærɪstə/|баристер (адвокат вищих судів у Британії)|A lawyer in England who argues cases in higher courts.|The barrister presented the argument to the judge.|procedure|C1
+solicitor|noun|/səˈlɪsɪtə/|соліситор (адвокат у Британії)|A lawyer in England who advises clients and prepares cases.|Her solicitor drafted the letter.|procedure|C1
+attorney|noun|/əˈtɜːni/|адвокат, повірений (США)|A lawyer in the United States.|The attorney filed the motion on Monday.|procedure|B2
+lawsuit|noun|/ˈlɔːsuːt/|судовий позов|A case brought to a court by one party against another.|The family filed a lawsuit against the hospital.|procedure|B2
+claim|noun|/kleɪm/|позов, вимога|A demand for a legal right or compensation.|The insurance claim was rejected.|procedure|B1
+sue|verb|/suː/|подавати до суду|To start a civil case against someone.|She decided to sue her former employer.|procedure|B2
+appeal|noun|/əˈpiːl/|апеляція|A request for a higher court to change a decision.|The company lodged an appeal against the ruling.|procedure|B2
+hearing|noun|/ˈhɪərɪŋ/|слухання|A session of a court where evidence or arguments are heard.|The hearing was adjourned until Friday.|procedure|B2
+adjourn|verb|/əˈdʒɜːn/|оголошувати перерву|To stop a hearing and continue at a later time.|The judge decided to adjourn the trial.|procedure|C1
+ruling|noun|/ˈruːlɪŋ/|постанова, рішення суду|An official decision made by a judge.|The ruling was welcomed by campaigners.|procedure|B2
+judgment|noun|/ˈdʒʌdʒmənt/|судове рішення|A final decision of a court in a case.|The court gave judgment for the claimant.|procedure|B2
+jurisdiction|noun|/ˌdʒʊərɪsˈdɪkʃn/|юрисдикція|The official power of a court to decide cases in an area or subject.|The court has no jurisdiction over foreign disputes.|procedure|C1
+precedent|noun|/ˈpresɪdənt/|прецедент|An earlier court decision used as a guide for later cases.|The judge followed the precedent set in 1990.|procedure|C1
+statute|noun|/ˈstætʃuːt/|закон, статут|A written law passed by a legislature.|The statute came into force last year.|procedure,public|B2
+legislation|noun|/ˌledʒɪsˈleɪʃn/|законодавство|Laws made by a government.|New legislation protects tenants.|public|B2
+regulation|noun|/ˌreɡjuˈleɪʃn/|регламент, норма|An official rule made by an authority.|Safety regulations apply to all factories.|public|B2
+subpoena|noun|/səˈpiːnə/|повістка до суду|An order to appear in court or provide documents.|The witness received a subpoena.|procedure,evidence|C1
+affidavit|noun|/ˌæfəˈdeɪvɪt/|письмове свідчення під присягою|A written statement made under oath.|She signed an affidavit confirming the facts.|procedure,evidence|C1
+oath|noun|/əʊθ/|присяга|A formal promise to tell the truth.|Witnesses must swear an oath before they speak.|procedure,evidence|B2
+testify|verb|/ˈtestɪfaɪ/|давати свідчення|To give evidence in court.|He agreed to testify against the company.|evidence,procedure|B2
+testimony|noun|/ˈtestɪməni/|свідчення|A formal statement given by a witness in court.|Her testimony was clear and consistent.|evidence|B2
+evidence|noun|/ˈevɪdəns/|докази|Facts or objects used to prove something in court.|The evidence showed that he was at the scene.|evidence|B1
+proof|noun|/pruːf/|доказ, доведення|Evidence that makes a fact certain.|There was no proof of the payment.|evidence|B1
+burden of proof|noun|/ˈbɜːdn əv pruːf/|тягар доказування|The duty to prove the facts of a case.|The burden of proof lies with the prosecution.|evidence|C1
+admissible|adjective|/ədˈmɪsəbl/|допустимий (про докази)|Allowed to be used as evidence in court.|The recording was ruled admissible.|evidence|C1
+hearsay|noun|/ˈhɪəseɪ/|свідчення з чужих слів|Evidence based on what someone heard from others.|Hearsay is usually not accepted as evidence.|evidence|C1
+cross-examine|verb|/ˌkrɒs ɪɡˈzæmɪn/|перехресний допит|To question a witness called by the other side.|The lawyer began to cross-examine the witness.|evidence,procedure|C1
+exhibit|noun|/ɪɡˈzɪbɪt/|речовий доказ, додаток до справи|An object or document shown to the court as evidence.|Exhibit A is a copy of the contract.|evidence|C1
+objection|noun|/əbˈdʒekʃn/|заперечення|A formal protest against a question or evidence in court.|The judge sustained the objection.|procedure,evidence|B2
