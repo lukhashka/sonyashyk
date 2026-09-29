@@ -1,7 +1,6 @@
 import { createBrowserRouter, Navigate, type RouteObject } from 'react-router';
 import { getEnabledModules } from '@/core/modules/registry';
 import { RequireAuth } from '@/core/auth/RequireAuth';
-import { AppShell } from './layout/AppShell';
 import { LoginPage } from './layout/LoginPage';
 
 /** Builds the route tree from the module registry: each module is mounted under /m/<id>. */
@@ -18,7 +17,8 @@ export function buildRoutes(): RouteObject[] {
       children: [
         {
           path: '/',
-          element: <AppShell />,
+          // Loaded on demand so the login page does not pay for the whole app shell.
+          lazy: async () => ({ Component: (await import('./layout/AppShell')).AppShell }),
           children: [
             { index: true, element: <Navigate to="/m/dashboard" replace /> },
             ...moduleRoutes,

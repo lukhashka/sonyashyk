@@ -22,8 +22,8 @@
   --radius-md: var(--radius-md);
   --radius-lg: var(--radius-lg);
   --shadow-soft: var(--shadow-soft);
-  --font-heading: 'Comfortaa', 'Nunito', system-ui, sans-serif;
-  --font-body: 'Nunito', system-ui, sans-serif;
+  --font-heading: 'Comfortaa Variable', 'Nunito Variable', system-ui, sans-serif;
+  --font-body: 'Nunito Variable', system-ui, sans-serif;
 }
 
 html,
@@ -56,6 +56,37 @@ h3 {
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+@keyframes flame-flicker {
+  0%,
+  100% {
+    transform: scale(1) rotate(-2deg);
+  }
+  50% {
+    transform: scale(1.12) rotate(2deg);
+  }
+}
+
+.flame-alive {
+  animation: flame-flicker 1.6s ease-in-out infinite;
+  transform-origin: 50% 90%;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Static first paint (in index.html) shown until React mounts. */
+.boot {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  font-size: 112px;
+  background: var(--gradient-hero);
 }

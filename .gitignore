@@ -5,3 +5,8 @@ dist
 !.env.example
 *.local
 *.tsbuildinfo
+dist-lh
+dist-e2e
+test-results
+playwright-report
+lh-*.json

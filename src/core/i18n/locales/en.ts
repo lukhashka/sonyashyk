@@ -3,7 +3,13 @@ import type { uk } from './uk';
 export const en: typeof uk = {
   common: {
     appName: 'Sonyashyk',
-    nav: { more: 'More', menu: 'Menu', collapse: 'Collapse menu', main: 'Main navigation' },
+    nav: {
+      skip: 'Skip to content',
+      more: 'More',
+      menu: 'Menu',
+      collapse: 'Collapse menu',
+      main: 'Main navigation',
+    },
     greeting: {
       morning: 'Good morning, {{name}} 🌸',
       day: 'Good afternoon, {{name}} ☀️',
@@ -43,6 +49,13 @@ export const en: typeof uk = {
       error: 'Could not update the task. Please try again.',
       dayComplete: 'Day complete!',
       dayCompleteHint: 'You did great. Bonus XP added and your streak is updated 🔥',
+      dayMessages: [
+        'Small steps every day add up to a long way ✨',
+        'So proud of you, future lawyer! 🌸',
+        'Rest now, you earned it ☕',
+        'One more day, one more brick of your future 🧱',
+        'The sunflower is shining bright! 🌻',
+      ],
     },
     achievements: {
       unlocked: 'New achievement! 🎉',

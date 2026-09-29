@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --color-bg: #fffbf9;
   --color-surface: #ffffff;
   --color-surface-muted: #fbf1ec;
@@ -14,11 +15,11 @@
   --color-nude-deep: #c49a82;
 
   --color-text: #3d2c2e;
-  --color-text-muted: #8a7274;
+  --color-text-muted: #7a6264;
 
   --color-success: #9cc5a1;
   --color-warning: #f2c58b;
-  --color-danger: #e27d7d;
+  --color-danger: #b93f4b;
 
   --radius-sm: 10px;
   --radius-md: 16px;
@@ -30,6 +31,7 @@
 
 /* Dark mode: "mocha rose" */
 :root[data-theme='dark'] {
+  color-scheme: dark;
   --color-bg: #221819;
   --color-surface: #2d2022;
   --color-surface-muted: #382a2c;
@@ -46,6 +48,7 @@
 
   --color-text: #f6e9e6;
   --color-text-muted: #b99fa1;
+  --color-danger: #f09a9a;
   --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.35);
   --gradient-hero: linear-gradient(135deg, #3b2830 0%, #33262a 50%, #221819 100%);
 }

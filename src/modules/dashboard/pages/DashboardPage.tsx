@@ -57,7 +57,12 @@ function StreakCard() {
   return (
     <Card>
       <div className="flex items-center gap-3">
-        <Flame size={32} strokeWidth={1.75} className="text-primary" aria-hidden="true" />
+        <Flame
+          size={32}
+          strokeWidth={1.75}
+          className={`text-primary ${(streak?.current ?? 0) > 0 ? 'flame-alive' : ''}`}
+          aria-hidden="true"
+        />
         <div>
           <h2 className="font-bold">{t('streak.title')}</h2>
           <p className="text-2xl font-bold">{t('streak.days', { count: streak?.current ?? 0 })}</p>

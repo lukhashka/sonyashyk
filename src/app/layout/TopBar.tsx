@@ -16,7 +16,7 @@ export function TopBar() {
 
   return (
     <header className="flex items-center justify-between gap-3 border-b border-border bg-surface px-4 py-3">
-      <h1 className="text-base font-bold md:text-lg">{greeting}</h1>
+      <p className="text-base font-bold md:text-lg">{greeting}</p>
       <div className="flex items-center gap-2">
         <Badge>
           <Flame size={16} strokeWidth={1.75} aria-hidden="true" />

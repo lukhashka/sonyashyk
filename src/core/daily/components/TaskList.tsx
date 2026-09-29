@@ -1,9 +1,58 @@
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
+import { AnimatePresence, motion } from 'motion/react';
 import { Check } from 'lucide-react';
 import { registry } from '@/core/modules/registry';
 import { Badge, Button, Card, Emoji, Progress } from '@/shared/ui';
 import { useReportProgress, type DailyPlan, type DailyTask } from '../queries';
+
+/** Round check: pops with a heart-ish spring when a task becomes done, floating "+XP" above it. */
+function TaskCheck({ done, emoji, xp }: { done: boolean; emoji: string; xp: number }) {
+  const { t } = useTranslation();
+  const wasDone = useRef(done);
+  const [showXp, setShowXp] = useState(false);
+
+  useEffect(() => {
+    if (done && !wasDone.current) {
+      setShowXp(true);
+      const id = setTimeout(() => setShowXp(false), 1400);
+      wasDone.current = true;
+      return () => clearTimeout(id);
+    }
+    wasDone.current = done;
+  }, [done]);
+
+  return (
+    <span className="relative">
+      <motion.span
+        key={done ? 'done' : 'todo'}
+        initial={wasDone.current === done && !showXp ? false : { scale: 0.4 }}
+        animate={{ scale: 1 }}
+        transition={{ type: 'spring', stiffness: 420, damping: 14 }}
+        className={`flex size-8 shrink-0 items-center justify-center rounded-full ${
+          done ? 'bg-success text-[#3d2c2e]' : 'bg-primary-soft'
+        }`}
+      >
+        {done ? <Check size={18} aria-hidden="true" /> : <Emoji symbol={emoji} />}
+      </motion.span>
+      <AnimatePresence>
+        {showXp && (
+          <motion.span
+            aria-hidden="true"
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: -28 }}
+            exit={{ opacity: 0, y: -40 }}
+            transition={{ duration: 0.7 }}
+            className="pointer-events-none absolute -top-1 left-1/2 -translate-x-1/2 text-sm font-bold whitespace-nowrap text-primary-ink"
+          >
+            +{t('daily.xp', { count: xp })}
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </span>
+  );
+}
 
 function TaskRow({ task, studyDay }: { task: DailyTask; studyDay: string }) {
   const { t } = useTranslation();
@@ -14,13 +63,7 @@ function TaskRow({ task, studyDay }: { task: DailyTask; studyDay: string }) {
   return (
     <li className="flex flex-col gap-2 rounded-md border border-border bg-surface-muted p-3">
       <div className="flex items-center gap-3">
-        <span
-          className={`flex size-8 shrink-0 items-center justify-center rounded-full ${
-            done ? 'bg-success text-[#3d2c2e]' : 'bg-primary-soft'
-          }`}
-        >
-          {done ? <Check size={18} aria-hidden="true" /> : <Emoji symbol={task.emoji ?? '🌸'} />}
-        </span>
+        <TaskCheck done={done} emoji={task.emoji ?? '🌸'} xp={task.xp} />
         <div className="min-w-0 flex-1">
           <p className={`font-semibold ${done ? 'text-text-muted line-through' : ''}`}>{title}</p>
           <p className="text-sm text-text-muted">

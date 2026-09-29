@@ -5,6 +5,7 @@ import { X } from 'lucide-react';
 import { useAuth } from '@/core/auth/AuthProvider';
 import { on } from '@/core/events/bus';
 import { useCheckAchievements } from '@/core/stats/queries';
+import { celebrate } from '@/shared/fx';
 import { getAllAchievements } from './achievements';
 
 const CHECK_DELAY_MS = 800;
@@ -26,7 +27,10 @@ export function AchievementWatcher() {
     timer.current = setTimeout(() => {
       mutate(undefined, {
         onSuccess: (ids) => {
-          if (ids.length > 0) setToasts((prev) => [...prev, ...ids]);
+          if (ids.length > 0) {
+            setToasts((prev) => [...prev, ...ids]);
+            void celebrate('achievement');
+          }
         },
       });
     }, CHECK_DELAY_MS);

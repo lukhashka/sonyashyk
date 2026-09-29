@@ -58,7 +58,7 @@ export function LoginPage() {
 
   if (session && needsMfa) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[image:var(--gradient-hero)] p-4">
+      <main className="flex min-h-screen items-center justify-center bg-[image:var(--gradient-hero)] p-4">
         <Card className="w-full max-w-sm">
           <h1 className="mb-1 text-2xl font-bold">{t('auth.mfaTitle')}</h1>
           <p className="mb-5 text-text-muted">{t('auth.mfaHint')}</p>
@@ -93,12 +93,12 @@ export function LoginPage() {
             </Button>
           </form>
         </Card>
-      </div>
+      </main>
     );
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[image:var(--gradient-hero)] p-4">
+    <main className="flex min-h-screen items-center justify-center bg-[image:var(--gradient-hero)] p-4">
       <Card className="w-full max-w-sm">
         <h1 className="mb-1 text-2xl font-bold">{t('auth.title')}</h1>
         <p className="mb-5 text-text-muted">{t('auth.subtitle')}</p>
@@ -143,6 +143,6 @@ export function LoginPage() {
           </Button>
         </form>
       </Card>
-    </div>
+    </main>
   );
 }

@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import { registry, assertValidRegistry } from '@/core/modules/registry';
 import { registerModuleI18n } from '@/core/i18n';
 import { App } from './App';
+import '@fontsource-variable/nunito/wght.css';
+import '@fontsource-variable/comfortaa/wght.css';
 import './styles/globals.css';
 
 assertValidRegistry(registry);

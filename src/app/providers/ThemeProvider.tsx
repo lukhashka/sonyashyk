@@ -7,7 +7,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
     const apply = () => {
-      document.documentElement.dataset.theme = resolveTheme(theme, mq.matches);
+      const resolved = resolveTheme(theme, mq.matches);
+      document.documentElement.dataset.theme = resolved;
+      document
+        .querySelector('meta[name="theme-color"]')
+        ?.setAttribute('content', resolved === 'dark' ? '#221819' : '#FFFBF9');
     };
     apply();
     mq.addEventListener('change', apply);
