@@ -36,7 +36,7 @@ To restore: `gpg -d backup.sql.gpg > backup.sql`.
 1. Workers & Pages → Create → Pages → Connect to Git → pick the repo.
 2. Build command `npm run build`, output directory `dist`, Node 24 (set `NODE_VERSION=24`).
 3. Environment variables: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`.
-4. Deploy. `public/_headers` (CSP etc.) and `public/_redirects` (SPA fallback) are applied automatically.
+4. Deploy. `public/_headers` (CSP etc.) is applied automatically; the SPA fallback is set in `wrangler.jsonc` (`not_found_handling: single-page-application`) — do not add `public/_redirects`, Workers rejects `/* /index.html 200` as an infinite loop.
 5. Verify: open the site, check response headers in DevTools → Network, sign in with the invited account.
 
 ## 4. Local development
