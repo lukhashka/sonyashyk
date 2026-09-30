@@ -5,6 +5,7 @@ import { useProfile } from '@/core/auth/profile';
 import { useStreak } from '@/core/daily/queries';
 import { getDayPart } from '@/core/lib/greeting';
 import { Badge } from '@/shared/ui';
+import { ThemeToggle } from './ThemeToggle';
 
 export function TopBar() {
   const { t } = useTranslation();
@@ -22,6 +23,7 @@ export function TopBar() {
           <Flame size={16} strokeWidth={1.75} aria-hidden="true" />
           <span>{streak?.current ?? 0}</span>
         </Badge>
+        <ThemeToggle />
         <Avatar path={profile?.avatar_url} emoji={profile?.avatar_emoji ?? '🌻'} size={36} />
       </div>
     </header>

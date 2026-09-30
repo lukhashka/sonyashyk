@@ -37,3 +37,13 @@ test('theme-color follows the theme without a flash', async ({ page }) => {
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   await expect(page.locator('meta[name="theme-color"]')).toHaveAttribute('content', '#221819');
 });
+
+test('the top bar toggle switches between light and dark', async ({ page }) => {
+  await installFakeBackend(page, { signedIn: true, theme: 'light' });
+  await page.goto('/m/dashboard');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await page.getByRole('button', { name: 'Увімкнути темну тему' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await page.getByRole('button', { name: 'Увімкнути світлу тему' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+});

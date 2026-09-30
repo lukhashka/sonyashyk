@@ -1,5 +1,13 @@
 # Changelog
 
+## Phase 6 — Polish (2026-09-30)
+
+- Motion & celebration: confetti on day completion (respects `prefers-reduced-motion`), flashcard flip, task-complete pop with floating XP, route fades.
+- Dark theme ("mocha rose") with no flash on load (`theme-init.js`), `theme-color` follows the theme; new one-tap light/dark toggle in the top bar, saved to the profile.
+- PWA: `vite-plugin-pwa`, manifest, icons (incl. maskable + apple-touch), offline shell.
+- Accessibility: route announcer, skip link, one `h1` per page, axe-core scans of every page in light + dark on desktop and mobile.
+- Playwright e2e against a fake backend: login, daily set → stats, a11y, PWA, theme toggle (46+ tests); ESLint ignores generated folders.
+
 ## Phase 5 — Stats & achievements (2026-09-29)
 
 - Migrations `stats_achievements` + `ew_stats`: `achievements_unlocked` (RLS read-own, no client writes), RPCs `get_stats_summary`, `get_daily_stats`, `ew_get_stats`, and the server-side achievements engine (`check_core_achievements`, `ew_check_achievements`, internal `grant_achievement`). SQL test `rls_stats.sql` (numbers, idempotent unlocking, no client grants, user isolation).

@@ -17,6 +17,8 @@ export const en: typeof uk = {
       night: 'Remember to rest, {{name}} ✨',
     },
     defaultName: 'sunshine',
+    themeToDark: 'Switch to dark theme',
+    themeToLight: 'Switch to light theme',
     loading: 'Loading…',
     error: {
       title: 'Oops, something went wrong',

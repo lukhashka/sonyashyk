@@ -15,6 +15,8 @@ export const uk = {
       night: 'Не забувай відпочивати, {{name}} ✨',
     },
     defaultName: 'сонечко',
+    themeToDark: 'Увімкнути темну тему',
+    themeToLight: 'Увімкнути світлу тему',
     loading: 'Завантаження…',
     error: {
       title: 'Ой, щось пішло не так',
