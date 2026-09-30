@@ -101,6 +101,7 @@ export async function exportMyData(): Promise<void> {
     'ew_user_words',
     'ew_reviews',
     'ew_settings',
+    'nt_folders',
   ] as const;
   const extra: Record<string, unknown> = {};
   for (const table of tables) {
@@ -115,6 +116,14 @@ export async function exportMyData(): Promise<void> {
     .not('owner_id', 'is', null);
   if (customError) throw customError;
   extra.ew_custom_words = custom;
+  // Notes without the generated search vector (it is derived data).
+  const { data: notes, error: notesError } = await supabase
+    .from('nt_notes')
+    .select(
+      'id, folder_id, title, body_md, tags, pinned, archived_at, deleted_at, created_at, updated_at',
+    );
+  if (notesError) throw notesError;
+  extra.nt_notes = notes;
   const payload = buildExport(userData.user, profile, new Date(), extra);
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);

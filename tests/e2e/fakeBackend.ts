@@ -63,6 +63,9 @@ export async function installFakeBackend(
   let totalXp = 0;
   let dayDone = false;
   let achievementSent = false;
+  const notes: Row[] = [];
+  const folders: Row[] = [];
+  let seq = 0;
 
   if (opts.signedIn) {
     // supabase-js derives its storage key from the project ref (host's first label).
@@ -169,7 +172,66 @@ export async function installFakeBackend(
       }
     }
 
-    switch (name.split('?')[0]) {
+    const table = name.split('?')[0];
+    if (table === 'nt_notes' || table === 'nt_folders') {
+      const store = table === 'nt_notes' ? notes : folders;
+      const idFilter = url.searchParams.get('id')?.replace('eq.', '');
+      if (req.method() === 'POST') {
+        const body = req.postDataJSON() as Row;
+        const now = new Date().toISOString();
+        const row: Row =
+          table === 'nt_notes'
+            ? {
+                folder_id: null,
+                title: '',
+                body_md: '',
+                tags: [],
+                pinned: false,
+                archived_at: null,
+                deleted_at: null,
+                created_at: now,
+                updated_at: now,
+                ...body,
+                id: `00000000-0000-4000-8000-0000000002${String(++seq).padStart(2, '0')}`,
+              }
+            : {
+                ...body,
+                id: `00000000-0000-4000-8000-0000000003${String(++seq).padStart(2, '0')}`,
+              };
+        if (table === 'nt_notes') row.preview = String(row.body_md).slice(0, 160);
+        store.push(row);
+        return json(route, wantsObject ? row : [row], 201);
+      }
+      if (req.method() === 'PATCH') {
+        const body = req.postDataJSON() as Row;
+        const row = store.find((r) => r.id === idFilter);
+        if (row) {
+          Object.assign(row, body, { updated_at: new Date().toISOString() });
+          if (table === 'nt_notes') row.preview = String(row.body_md).slice(0, 160);
+        }
+        return wantsObject && row ? json(route, row) : route.fulfill({ status: 204 });
+      }
+      if (req.method() === 'DELETE') {
+        const keep = store.filter((r) => r.id !== idFilter);
+        store.length = 0;
+        store.push(...keep);
+        return route.fulfill({ status: 204 });
+      }
+      const fts = url.searchParams.get('search'); // e.g. fts(simple).договір:*
+      let list = idFilter ? store.filter((r) => r.id === idFilter) : [...store];
+      if (fts) {
+        const words = fts
+          .replace(/^fts\([a-z]+\)\./, '')
+          .split(' & ')
+          .map((w) => w.replace(':*', '').toLowerCase());
+        list = list.filter((r) =>
+          words.every((w) => `${r.title} ${r.body_md}`.toLowerCase().includes(w)),
+        );
+      }
+      return rows(list);
+    }
+
+    switch (table) {
       case 'profiles':
         return rows([
           {

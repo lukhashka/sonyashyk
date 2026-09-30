@@ -2,6 +2,7 @@ import type { AppModule } from './types';
 import { dashboardModule } from '@/modules/dashboard';
 import { profileModule } from '@/modules/profile';
 import { englishWordsModule } from '@/modules/english-words';
+import { notesModule } from '@/modules/notes';
 import { statsModule } from '@/modules/stats';
 import { todayModule } from '@/modules/today';
 
@@ -10,6 +11,7 @@ export const registry: AppModule[] = [
   dashboardModule,
   todayModule,
   englishWordsModule,
+  notesModule,
   statsModule,
   profileModule,
 ];

@@ -1,5 +1,13 @@
 # Changelog
 
+## Phase 7 — Notes module (2026-09-30)
+
+- Migration `notes`: `nt_folders` and `nt_notes` (title ≤ 200, body ≤ 100 000 chars as DB constraints, ≤ 10 tags, pin / archive / soft delete), RLS own-rows only, notes can only be filed into the user's own folders, permanent delete only from the trash, per-user row limits, generated `preview` and full-text `search` (Ukrainian via `simple`, English stemmed) with a GIN index. SQL test `rls_notes.sql` (user isolation, forged owners/folders, trash-only delete, size limit, search, anon denied).
+- New `notes` module: list with live search, views (all / pinned / archive / trash), folder / tag filters, sorting, folder manager, five templates (blank, IRAC, case brief, lecture, article summary; UA + EN), Markdown editor with live preview (side by side on desktop, tabs on mobile), debounced autosave with a "saved ✓" indicator, pin / archive / duplicate / trash / restore / delete forever.
+- Markdown is rendered by `marked` and sanitised by DOMPurify (no raw HTML, images, styles or `javascript:` links; links open with `noopener`).
+- Export: single note as `.md`, all notes as a `.zip` (one directory per folder); notes and folders are included in "Export my data".
+- Stats: total notes and notes written in the selected range.
+
 ## Phase 6 — Polish (2026-09-30)
 
 - Motion & celebration: confetti on day completion (respects `prefers-reduced-motion`), flashcard flip, task-complete pop with floating XP, route fades.

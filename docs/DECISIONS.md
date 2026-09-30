@@ -16,4 +16,9 @@ Choices made where PROMPT.md was silent (simplest secure option).
 - **2026-09-29 — "Study time" is an estimate**: the sum of `estimated_minutes` of completed tasks (no `study_sessions` writer exists yet; a Pomodoro module can replace it later).
 - **2026-09-29 — "Words practised", not "words learned", per range**: `ew_user_words` has no first-seen date, so range stats count distinct words answered in `ew_reviews`; "Known" is the all-time count.
 - **2026-09-29 — Daily series RPCs are capped at ~13 months** (`get_daily_stats`, `ew_get_stats`); "all time" summaries are uncapped, charts show the last year, aggregated per week beyond 45 days.
+- **2026-09-30 — Notes search uses the `simple` + `english` configs.** Postgres ships no Ukrainian dictionary, so Ukrainian words match exactly (with prefix matching from the client's `word:*` query); English text is additionally stemmed. Tags are filtered client-side because `array_to_string` is not immutable and cannot be used in a generated column.
+- **2026-09-30 — Notes are sanitised with DOMPurify after `marked`.** Images are forbidden (the CSP would block external ones anyway and they would leak the reader's IP); only Markdown, task-list checkboxes and safe links survive.
+- **2026-09-30 — Note list rows carry only a 160-char `preview`** (generated column); the full body is fetched when a note is opened, so the list stays light for thousands of notes.
+- **2026-09-30 — Optional daily "write a note" task and note achievements are deferred.** PROMPT §6.7 marks the task as optional/off by default; it needs a per-module settings surface that does not exist yet.
+- **2026-09-30 — Notes ↔ words/tasks links are not implemented.** §6.7 allows them only through core contracts/events; no such event exists yet, so they wait for a real use case.
 

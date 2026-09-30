@@ -7,6 +7,7 @@ const PAGES = [
   { name: 'today', path: '/m/today' },
   { name: 'stats', path: '/m/stats' },
   { name: 'profile', path: '/m/profile' },
+  { name: 'notes', path: '/m/notes' },
   { name: 'english words', path: '/m/english-words' },
   { name: 'dictionary', path: '/m/english-words/dictionary' },
 ];
